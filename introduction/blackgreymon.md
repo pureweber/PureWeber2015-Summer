@@ -2,7 +2,6 @@
 =
 1.属性
 -
-![Alt text](http://www.kaiyue88.com/img/aHR0cDovL2ltZzQuZHVpdGFuZy5jb20vdXBsb2Fkcy9pdGVtLzIwMTMwMi8yMS8yMDEzMDIyMTAyMjkwOV9YRW5yZS50aHVtYi42MDBfMC5qcGVn.jpg)   
 姓名：唐晓程   
 性别：男    
 爱好：三国杀 学姐 PS GTA 羽毛球 狗    

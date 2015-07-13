@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>登陆 - Airbnb账户</title>
+</head>
+
+
+<body >
+    <style type="text/css">
+        body {
+            background-color: lightblue;
+        }
+        .header-bar{
+            background-color:white;
+        }
+        .signin-card {
+            width: 274px;
+            padding: 40px 40px;
+        }
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 10px;
+            display: block;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .signin-card {
+            background-color: #f7f7f7;
+            padding: 20px 25px 30px;
+            margin: 0 auto 25px;
+            width: 304px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        button, input[type=button], input[type=submit] {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        .rc-button-submit, .rc-button-submit:visited {
+            border: 1px solid #3079ed;
+            color: #fff;
+            text-shadow: 0 1px rgba(0,0,0,0.1);
+            background-color: #4d90fe;
+            background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+            background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+            background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+            background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+            background-image: linear-gradient(top,#4d90fe,#4787ed);
+        }
+
+        .rc-button, .rc-button:visited {
+            display: inline-block;
+            min-width: 46px;
+            text-align: center;
+            color: #444;
+            font-size: 14px;
+            font-weight: 700;
+            height: 36px;
+            padding: 0 8px;
+            line-height: 36px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            -o-transition: all 0.218s;
+            -moz-transition: all 0.218s;
+            -webkit-transition: all 0.218s;
+            transition: all 0.218s;
+            border: 1px solid #dcdcdc;
+            background-color: #f5f5f5;
+            background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+            background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+            background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+            background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
+            background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+            -o-transition: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
+
+    </style>
+    <div align="center">
+        <div class="header-bar">
+                <img alt="Airbnb" class="logo" src="data:image/png;base64,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">
+         </div>
+    </div>
+    <div align="center">
+        <div class="banner">
+            <h2>
+                请输入您的用户名和密码
+            </h2>
+            </div>
+    </div>
+    <div align="center">
+        <div class="signin-card">
+            <img alt="l=user" class="profile-img" src="http://i1.tietuku.com/c8ed37db20f9090e.png">
+            <form>
+                姓名:
+                <input type="text" name="user" />
+                <br />
+                密码:
+                <input type="text" name=" password" />
+            </form>
+            <input id="signIn" name="signIn" class="rc-button rc_button-submit" type="submit" value="登录" />
+
+        </div>
+    </div>
+    <div align="center">
+        <br />
+        <div align="right">
+            <a href="http://www.baidu.com">没有账户？</a>
+            <br />
+            <a href="http://www.baidu.com">需要帮助？</a>
+</div>
+    </div>
+</body>
+</html>

@@ -22,7 +22,15 @@ position: relative;
   top:-20px;
 }
 
-.jumbotron p {
-color:gray
+.jumbotron span {
+color:gray;
+font-weight:bold;
+font-size:20px;
 }
 
+
+.jumbotron legend{
+color:white;
+font-weight:bold;
+font-size:30px;
+}

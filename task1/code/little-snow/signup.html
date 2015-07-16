@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SIGN UP</title>
+</head>
+
+<body background="./background.jpg">
+  <table aligin ="center" border="0" width ="600" height ="80">
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+  <table style ="font-size:13px" align="center" border="0" cellpadding="0" cellspacing="0" width="600" height ="auto">
+    <tr align="center" valign="top" width ="570">
+      <td><form action id ="signupform" method="post">
+          <table align="center" border="0" bordercolor="#909090" cellpadding="0" cellspacing="0" width="570" height ="80">
+            <tr>
+              <td align="center" width="120" valign="bottom" height="60"><strong>个人资料:</strong></td>
+              <td align="left" valign="bottom"><font color="#F70307"> *</font>为必填项</td>
+            </tr>
+            <tr valign="top">
+              <td colspan ="2"><hr/></td>
+            </tr>
+          </table>
+          <table border="0" bordercolor="#C0BABA" cellpadding="0" cellspacing="0" width="570" height ="auto">
+            <tr>
+              <td  width ="170" align= "right" height="30"><font color="#E72225">*</font>用 户 名：</td>
+              <td><input type ="text" id ="user_name"/></td>
+              <td colspan ="2" width="220"><font color="#AEA6A6">最多8位字符</font></td>
+            </tr>
+            <tr>
+              <td  width ="170" align="right" height="30"><font color="#E72225">*</font>电子邮箱：</td>
+              <td><input type ="text" id ="email"/></td>
+              <td colspan ="2" width="200"><font color="#AEA6A6">此邮箱将被用来确认你的身份</font></td>
+            </tr>
+            <tr>
+              <td width ="170" align="right" height="30">手机号码：</td>
+              <td><input type ="text" id ="mobile_num"/></td>
+              <td colspan ="2" width="220"><font color="#AEA6A6">11位数字</font></td>
+            </tr>
+            <tr>
+              <td  width ="170" align="right" height="30"><font color="#E72225">*</font>设定密码：</td>
+              <td><input type ="password" id ="password"/></td>
+              <td colspan ="2" width="200"><font color="#AEA6A6">长度必须在6-20个字符之间</font></td>
+            </tr>
+            <tr>
+              <td  width ="170" align="right" height="30"><font color="#E72225">*</font>重复密码：</td>
+              <td colspan ="2"><input type ="password"id ="rep_password"/></td>
+            </tr>
+            <tr>
+              <td  width ="170" align="right" height="30"><font color="#E72225">*</font>昵    　 称：</td>
+              <td><input type ="text" id ="nickname"/></td>
+              <td colspan ="2" width="200"><font color="#AEA6A6">最多10个字符</font></td>
+            </tr>
+            <tr>
+              <td width ="170" align="right" height="30"><font color="#E72225">*</font>性　　别：</td>
+              <td colspan ="3"><input type ="radio" name ="sex" value="0" checked="checked"/>
+                男
+                <input type ="radio" name ="sex" value="1"/>
+                女</td>
+            </tr>
+            <tr>
+              <td width ="170" align="right" height="30">年　　龄：</td>
+              <td><input type ="text" id ="age"/></td>
+            </tr>
+            <tr>
+              <td align="right"><input type ="reset" value ="重置"/></td>
+              <td colspan ="2" align="left"><input type ="button" value ="确认注册" id ="submit"/></td>
+            </tr>
+          </table>
+        </form></td>
+    </tr>
+  </table>
+</body>
+</html>

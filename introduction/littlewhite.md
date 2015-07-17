@@ -1,0 +1,14 @@
+#小白的自我介绍<br/>
+<br/>
+昵称：littlewhite<br/>
+<br/>
+真实姓名：黄运智<br/>
+<br/>
+年级：2014级<br/>
+<br/>
+GitHub:https://github.com/964873559
+<br/>
+<br/>
+个人主页：暂无<br/>
+<br/>
+爱好：玩

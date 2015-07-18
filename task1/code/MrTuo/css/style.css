@@ -1,13 +1,16 @@
-﻿/*
- *
- * Template Name: Fullscreen Login
- * Description: Login Template with Fullscreen Background Slideshow
- * Author: Anli Zaimi
- * Author URI: http://azmind.com
- *
- */
+﻿html, body, div,h1,form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-
+p{
+    font-size:10px;
+    color: red;
+}
 body {
     background: #f8f8f8;
     text-align: center;
@@ -39,12 +42,12 @@ input {
     height: 42px;
     margin-top: 25px;
     padding: 0 15px;
-    background: #2d2d2d; /* browsers that don't support rgba */
+    background: #2d2d2d; 
     background: rgba(45,45,45,.15);
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    border: 1px solid #3d3d3d; /* browsers that don't support rgba */
+    border: 1px solid #3d3d3d; 
     border: 1px solid rgba(255,255,255,.15);
     -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
     -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
@@ -185,7 +188,6 @@ button:active {
 
 .connect a:hover { background-position: center bottom; }
 
-/*－－－增加部份的CSS－－－*/
 form,input,button{font-family:Microsoft YaHei,Segoe UI,Tahoma,Arial,Verdana,sans-serif; text-decoration:none; width:100%;}
 button.submit_button{ font-size:24px; letter-spacing:15px;}
 input.Captcha{ width:130px; float:left;}

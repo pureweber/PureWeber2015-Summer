@@ -36,3 +36,13 @@ PureWeber 2015年夏季学期Web培训班
 
 4. [Pro Git](http://git.oschina.net/progit/)
 
+## 3. Task2
+
+1. 复习css内容
+
+2. 用css美化第一次作业的的页面，加入导航栏等
+
+3. 阅读推荐学习内容
+
+完成作业，详见[这里](./task2/doc/css-chenqian/README.md)。在这个[文件夹](./task2/code)下新建以你的账户名为文件夹名的文件夹，并把代码放在你新建的这个文件夹中。
+

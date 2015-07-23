@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul li {
+			display: block;
+			background-color: red;
+			border: 1px solid black;
+			height: 20px;
+			width: 40px;
+			float: left;
+			margin-left: 20px;
+		}
+		ul::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="">Ìø×ª1</a></li>
+		<li><a href="">Ìø×ª2</a></li>
+		<li><a href="">Ìø×ª3</a></li>
+	</ul>
+</body>
+</html>

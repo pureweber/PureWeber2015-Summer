@@ -1,0 +1,116 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('images/P1.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.jumbotron .loginbox {
+  background-image: url('images/login-back.png');
+  width:428px;
+  height:285px;
+  padding:3em;
+  position:absolute;
+  left:850px;
+  top:150px;
+} 
+
+.jumbotron form {
+  padding-top: 2em;
+}
+
+.jumbotron input[type="text"] {
+  font-family: 'Microsoft Yahei', sans-serif;
+  width: 350px;
+  padding: 1em 1em 1em 3em;
+  color: #fff;
+  font-size: 16px;
+  outline:0 none;
+  background: url('images/user.png') no-repeat 5px 7px #EE82EE;
+  border:0 none;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+.jumbotron input[type="password"]{
+  font-family: 'Microsoft Yahei', sans-serif;
+  width: 350px;
+  padding: 1em 1em 1em 3em;
+  color: #fff;
+  font-size: 15px;
+  outline:0 none;
+  background: url('images/password.png') no-repeat 5px 7px #EE82EE;
+  border:0 none;
+  margin-bottom: 3em;
+  }
+
+.jumbotron .btn{
+  float:right;
+  font-family: 'Microsoft Yahei', sans-serif;
+}
+
+.jumbotron .btn input[type="submit"] {
+  background: url('images/login.png') no-repeat 3px 6px #fff;
+  padding: .6em .6em .6em 2em;
+  outline: none;
+  border: none;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.jumbotron .btn input[type="submit"]:hover {
+  background: #00FF7F;
+  background: url('images/tick.png') no-repeat 9px 12px #00FF7F;
+  color: #fff;
+}
+
+
+.jumbotron .loginbox .autologin{
+  float:left;
+  font-family: 'Microsoft Yahei', sans-serif;
+}
+
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}

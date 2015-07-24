@@ -235,6 +235,7 @@ p:nth-child(1) a:hover{
 }
 
 .abulm a:hover img{
+    z-index:50;
     animation-play-state:paused;
 }
 

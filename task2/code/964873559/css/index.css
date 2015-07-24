@@ -48,7 +48,7 @@ body {
 
 
 .login {
-    width: 315px;
+    width: 88%;
     height: 250px;
 }
 .form_1 {
@@ -220,7 +220,7 @@ p:nth-child(1) a:hover{
     height: 306px;
     overflow: hidden;
     margin-top: 85px;
-    margin-left: 420px;
+    margin-left: 36%;
 }
 
 .abulm img {

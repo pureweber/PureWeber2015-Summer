@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {text-decoration:none;
+	font-family:"微软雅黑";
+
+}
+a:link,a:visited,a:active 
+{
+	color:#000000;
+}
+a:hover
+{
+	text-decoration:underline;
+}
+
+.button{
+	border:4px solid white;
+	background:none;
+	text-align:center;
+	font-family:"微软雅黑";
+	font-size:18px;
+	cursor:hand;
+	width:100px; 
+	height:50px;
+	color:white;
+	margin-top:20px;
+}
+
+.signup{
+	background-image:url(1.jpg);
+  	height: 500px;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	margin-left:-10px;
+	margin-right:-10px;
+	margin-top:-30px;
+}
+
+.left{
+	float:left;
+	list-style-type:none;
+	
+}
+
+.right{
+	float:right;
+	list-style-type:none;
+	margin-right:20px;
+}
+
+.sign{
+	width:500px;
+	color:#ffffff;
+	text-shadow:#000000 1px 1px 1px;
+	font-family:"微软雅黑";
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+
+.in{
+	height:40px;
+	width:300px;
+}
+
+li{
+	font-size:12px;
+}
+
+.back>a{
+	margin-left:20px;
+	font-size:20px;
+	color:#3399FF;
+}

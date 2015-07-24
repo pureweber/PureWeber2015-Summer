@@ -1,5 +1,4 @@
-.nav a 
-{
+.nav a {
   color: #5a5a5a;
   font-size: 11px;
   font-weight: bold;
@@ -12,7 +11,7 @@
 }
 
 .jumbotron {
-  background-image:url('http://goo.gl/04j7Nn');
+  background-image:url(images/P2.jpg);
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;

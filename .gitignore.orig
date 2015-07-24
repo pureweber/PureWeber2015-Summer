@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+# Created by using vim
+*.swp
+*~
+=======
+.DS_Store
+.idea
+>>>>>>> 607714a18b05dd4435adbccf886362f193b123bc

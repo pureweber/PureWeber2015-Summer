@@ -28,11 +28,11 @@ PureWeber 2015年夏季学期Web培训班
 
 **推荐学习内容：**
 
-1. [廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+1. [廖雪峰的Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
-2. [HTML与CSS基础课程](http://www.imooc.com/view/9)
+2. [HTML与CSS基础课程-慕课网](http://www.imooc.com/view/9)
 
-3. [知乎上的一些基础概念](http://www.zhihu.com/question/22689579)
+3. [知乎上的一些Web基础概念](http://www.zhihu.com/question/22689579)
 
 4. [Pro Git](http://git.oschina.net/progit/)
 

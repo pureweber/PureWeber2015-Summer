@@ -1,0 +1,65 @@
+/*主页*/
+*{
+	margin: 0px;
+	padding: 0px;
+	color: #FFFFFF;	
+}
+
+.nav{
+	display: block;
+	height:70px;
+	width:100% ;
+	background-color: #2E333F;
+}
+ul li{
+	display: inline-block;
+	font-family: "Microsoft YaHei";
+	
+}
+.log{
+	position: relative;
+	top:15px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline; 
+}
+body{
+	background-image: url("背景3.jpg");
+}
+.signup{
+	float: right;
+}
+/*注册页面*/
+.section{
+	margin-top: 50px;
+	display: block;
+	clear:both;
+	height: 500px;
+}
+.form{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	height: 600px;
+	width:370px;
+	margin-top: 40px;
+}
+.input{
+	display: block;
+	float: right;
+	margin: 10px;
+}
+.submit{
+	display:block;
+	clear:right;
+	margin-right: auto;
+	margin-left: auto; 
+	width: 30px;
+}
+input{
+	color: black;
+	font-size: 20px;
+}

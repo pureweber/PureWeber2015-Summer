@@ -1,0 +1,629 @@
+/*界面所用css布局*/
+.html {
+    width: 100%;
+    margin: 0px;
+}
+body {
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../image/bg_1.jpg);
+}
+
+.body_1 {
+    width: 90%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: #CFCFCF;*/
+}
+.jumbotron {
+    width: 100%;
+    height: 350px;
+    margin-top: 5%;
+    /*   background-image: url(../image/bg_1.jpg);*/
+    background-repeat: no-repeat;
+}
+
+.main {
+    color: #FFFFFF;
+    width: 30%;
+    height: 430px;
+    margin-top: 30px;
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid #cfcfcf;
+    background: #191970;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.container_1 {
+    margin-left: 10%;
+}
+
+
+.login {
+    width: 315px;
+    height: 250px;
+}
+.form_1 {
+
+    float: right;
+}
+.form_2 {
+
+    float: right;
+}
+.form_3 {
+
+    float: right;
+}
+.form_4 {
+
+    float: right;
+}
+.form_5 {
+
+    float: right;
+}
+.form_6 {
+
+    float: right;   
+}
+.radio_1 {
+    float: left;
+    width: 70px;
+    height: 36px;
+    margin-left: 27%;
+    margin-right: auto;
+}
+.radio_2 {
+    float: left;
+    width: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+input {
+    border: 0px;
+    background: #000000;
+    border-radius: 5px;
+}
+
+#menu {
+     height: 45px; 
+     margin:0 auto; 
+     opacity: 0.8;
+     background: #000000;
+    }
+
+#menu ul { 
+    list-style: none; 
+    margin: 0px; 
+    padding: 0px; 
+} 
+#menu ul li { 
+    float:left;
+}
+#menu ul li a { 
+    font-size: 15px;
+    color: #FFFFFF;
+    display:block; 
+    padding: 0px 20px; 
+    height: 45px; 
+    line-height: 45px; 
+    float:left;
+} 
+#menu ul li a:hover { 
+    background:#333; 
+    color:#fff;
+}
+img {
+    width: 10%;
+    height: 100%;
+    margin-left: 20px;
+    border: 0px;
+    float: left;
+}
+
+.bottom {
+    margin-left: 40%;
+    margin-top: 120px;
+    margin-bottom: 0px;
+}
+
+p:nth-child(1) a{
+    font-size: 75px;
+    color:#BA01FF;
+}
+p:nth-child(1) a:hover{
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+  color: #191970;
+}
+
+@-webkit-keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 40px #ff00de,
+               0 0 70px #ff00de,
+               0 0 80px #ff00de,
+               0 0 100px #ff00de,
+               0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #ff00de,
+               0 0 35px #ff00de,
+               0 0 40px #ff00de,
+               0 0 50px #ff00de,
+               0 0 75px #ff00de;
+  }
+}
+
+@-moz-keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 40px #ff00de,
+               0 0 70px #ff00de,
+               0 0 80px #ff00de,
+               0 0 100px #ff00de,
+               0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #ff00de,
+               0 0 35px #ff00de,
+               0 0 40px #ff00de,
+               0 0 50px #ff00de,
+               0 0 75px #ff00de;
+  }
+}
+@keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 40px #ff00de,
+               0 0 70px #ff00de,
+               0 0 80px #ff00de,
+               0 0 100px #ff00de,
+               0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #ff00de,
+               0 0 35px #ff00de,
+               0 0 40px #ff00de,
+               0 0 50px #ff00de,
+               0 0 75px #ff00de;
+  }
+}
+
+.abulm { 
+    width: 60%;
+    height: 306px;
+    overflow: hidden;
+    margin-top: 85px;
+    margin-left: 420px;
+}
+
+.abulm img {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  width: 33.3%;
+  height: 50%;
+  border: 2px solid #CFCFCF;
+  border-radius: 5px;
+  position:relative;
+}
+
+.abulm a:hover img{
+    animation-play-state:paused;
+}
+
+.abulm .abulm_1 img{
+  animation-name:myfirst;
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-delay:0s;
+  animation-iteration-count:infinite;
+  animation-direction:normal;
+  animation-play-state:running;
+  /* Firefox: */
+  -moz-animation-name:myfirst;
+  -moz-animation-duration:5s;
+  -moz-animation-timing-function:linear;
+  -moz-animation-delay:0s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-direction:normal;
+  -moz-animation-play-state:running;
+  /* Safari and Chrome: */
+  -webkit-animation-name:myfirst;
+  -webkit-animation-duration:5s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-delay:0s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:normal;
+  -webkit-animation-play-state:running;
+  /* Opera: */
+  -o-animation-name:myfirst;
+  -o-animation-duration:5s;
+  -o-animation-timing-function:linear;
+  -o-animation-delay:0s;
+  -o-animation-iteration-count:infinite;
+  -o-animation-direction:normal;
+  -o-animation-play-state:running;
+} 
+
+@keyframes myfirst
+{
+0%   {left:0px; top:0px;}
+16%  {left:30%; top:0px;}
+33%  {left:66%; top:0px;}
+49%  {left:66%; top:150px;}
+66%  {left:30%; top:150px;}
+82%  {left:0px; top:150px;}
+100% {left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {left:0px; top:0px;}
+16%  {left:30%; top:0px;}
+33%  {left:66%; top:0px;}
+49%  {left:66%; top:150px;}
+66%  {left:30%; top:150px;}
+82%  {left:0px; top:150px;}
+100% {left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {left:0px; top:0px;}
+16%  {left:30%; top:0px;}
+33%  {left:66%; top:0px;}
+49%  {left:66%; top:150px;}
+66%  {left:30%; top:150px;}
+82%  {left:0px; top:150px;}
+100% {left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {left:0px; top:0px;}
+16%  {left:30%; top:0px;}
+33%  {left:66%; top:0px;}
+49%  {left:66%; top:150px;}
+66%  {left:30%; top:150px;}
+82%  {left:0px; top:150px;}
+100% {left:0px; top:0px;}
+}
+
+.abulm .abulm_2 img{
+  animation-name:mysecond;
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-delay:1s;
+  animation-iteration-count:infinite;
+  animation-direction:normal;
+  animation-play-state:running;
+  /* Firefox: */
+  -moz-animation-name:mysecond;
+  -moz-animation-duration:5s;
+  -moz-animation-timing-function:linear;
+  -moz-animation-delay:1s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-direction:normal;
+  -moz-animation-play-state:running;
+  /* Safari and Chrome: */
+  -webkit-animation-name:mysecond;
+  -webkit-animation-duration:5s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-delay:1s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:normal;
+  -webkit-animation-play-state:running;
+  /* Opera: */
+  -o-animation-name:mysecond;
+  -o-animation-duration:5s;
+  -o-animation-timing-function:linear;
+  -o-animation-delay:1s;
+  -o-animation-iteration-count:infinite;
+  -o-animation-direction:normal;
+  -o-animation-play-state:running;
+} 
+
+@keyframes mysecond
+{
+0%   {left:-33.3%; top:0px;}
+16%  {left:-3.3%; top:0px;}
+33%  {left:32.7%; top:0px;}
+49%  {left:32.7%; top:150px;}
+66%  {left:-3.3%; top:150px;}
+82%  {left:-33.3%; top:150px;}
+100% {left:-33.3%; top:0px;}
+}
+
+@-moz-keyframes mysecond /* Firefox */
+{
+0%   {left:-33.3%; top:0px;}
+16%  {left:-3.3%; top:0px;}
+33%  {left:32.7%; top:0px;}
+49%  {left:32.7%; top:150px;}
+66%  {left:-3.3%; top:150px;}
+82%  {left:-33.3%; top:150px;}
+100% {left:-33.3%; top:0px;}
+}
+
+@-webkit-keyframes mysecond /* Safari and Chrome */
+{
+0%   {left:-33.3%; top:0px;}
+16%  {left:-3.3%; top:0px;}
+33%  {left:32.7%; top:0px;}
+49%  {left:32.7%; top:150px;}
+66%  {left:-3.3%; top:150px;}
+82%  {left:-33.3%; top:150px;}
+100% {left:-33.3%; top:0px;}
+}
+
+@-o-keyframes mysecond /* Opera */
+{
+0%   {left:-33.3%; top:0px;}
+16%  {left:-3.3%; top:0px;}
+33%  {left:32.7%; top:0px;}
+49%  {left:32.7%; top:150px;}
+66%  {left:-3.3%; top:150px;}
+82%  {left:-33.3%; top:150px;}
+100% {left:-33.3%; top:0px;}
+}
+
+.abulm .abulm_3 img{
+  animation-name:mythird;
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-delay:2s;
+  animation-iteration-count:infinite;
+  animation-direction:normal;
+  animation-play-state:running;
+  /* Firefox: */
+  -moz-animation-name:mythird;
+  -moz-animation-duration:5s;
+  -moz-animation-timing-function:linear;
+  -moz-animation-delay:2s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-direction:normal;
+  -moz-animation-play-state:running;
+  /* Safari and Chrome: */
+  -webkit-animation-name:mythird;
+  -webkit-animation-duration:5s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-delay:2s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:normal;
+  -webkit-animation-play-state:running;
+  /* Opera: */
+  -o-animation-name:mythird;
+  -o-animation-duration:5s;
+  -o-animation-timing-function:linear;
+  -o-animation-delay:2s;
+  -o-animation-iteration-count:infinite;
+  -o-animation-direction:normal;
+  -o-animation-play-state:running;
+} 
+
+@keyframes mythird
+{
+0%   {left:-66.6%; top:0px;}
+16%  {left:-36.6%; top:0px;}
+33%  {left:-0.6%; top:0px;}
+49%  {left:-0.6%; top:150px;}
+66%  {left:-36.6%; top:150px;}
+82%  {left:-66.6%; top:150px;}
+100% {left:-66.6%; top:0px;}
+}
+
+@-moz-keyframes mythird /* Firefox */
+{
+0%   {left:-66.6%; top:0px;}
+16%  {left:-36.6%; top:0px;}
+33%  {left:-0.6%; top:0px;}
+49%  {left:-0.6%; top:150px;}
+66%  {left:-36.6%; top:150px;}
+82%  {left:-66.6%; top:150px;}
+100% {left:-66.6%; top:0px;}
+}
+
+@-webkit-keyframes mythird /* Safari and Chrome */
+{
+0%   {left:-66.6%; top:0px;}
+16%  {left:-36.6%; top:0px;}
+33%  {left:-0.6%; top:0px;}
+49%  {left:-0.6%; top:150px;}
+66%  {left:-36.6%; top:150px;}
+82%  {left:-66.6%; top:150px;}
+100% {left:-66.6%; top:0px;}
+}
+
+@-o-keyframes mythird /* Opera */
+{
+0%   {left:-66.6%; top:0px;}
+16%  {left:-36.6%; top:0px;}
+33%  {left:-0.6%; top:0px;}
+49%  {left:-0.6%; top:150px;}
+66%  {left:-36.6%; top:150px;}
+82%  {left:-66.6%; top:150px;}
+100% {left:-66.6%; top:0px;}
+}
+
+.abulm .abulm_4 img{
+  animation-name:myfouth;
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-delay:3s;
+  animation-iteration-count:infinite;
+  animation-direction:normal;
+  animation-play-state:running;
+  /* Firefox: */
+  -moz-animation-name:myfouth;
+  -moz-animation-duration:5s;
+  -moz-animation-timing-function:linear;
+  -moz-animation-delay:3s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-direction:normal;
+  -moz-animation-play-state:running;
+  /* Safari and Chrome: */
+  -webkit-animation-name:myfouth;
+  -webkit-animation-duration:5s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-delay:3s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:normal;
+  -webkit-animation-play-state:running;
+  /* Opera: */
+  -o-animation-name:myfouth;
+  -o-animation-duration:5s;
+  -o-animation-timing-function:linear;
+  -o-animation-delay:3s;
+  -o-animation-iteration-count:infinite;
+  -o-animation-direction:normal;
+  -o-animation-play-state:running;
+} 
+
+@keyframes myfouth
+{
+0%   {left:0px; top:-150px;}
+16%  {left:30%; top:-150px;}
+33%  {left:66%; top:-150px;}
+49%  {left:66%; top:0px;}
+66%  {left:30%; top:0px;}
+82%  {left:0px; top:0px;}
+100% {left:0px; top:-150px;}
+}
+
+@-moz-keyframes myfouth /* Firefox */
+{
+0%   {left:0px; top:-150px;}
+16%  {left:30%; top:-150px;}
+33%  {left:66%; top:-150px;}
+49%  {left:66%; top:0px;}
+66%  {left:30%; top:0px;}
+82%  {left:0px; top:0px;}
+100% {left:0px; top:-150px;}
+}
+
+@-webkit-keyframes myfouth /* Safari and Chrome */
+{
+0%   {left:0px; top:-150px;}
+16%  {left:30%; top:-150px;}
+33%  {left:66%; top:-150px;}
+49%  {left:66%; top:0px;}
+66%  {left:30%; top:0px;}
+82%  {left:0px; top:0px;}
+100% {left:0px; top:-150px;}
+}
+
+@-o-keyframes myfouth /* Opera */
+{
+0%   {left:0px; top:-150px;}
+16%  {left:30%; top:-150px;}
+33%  {left:66%; top:-150px;}
+49%  {left:66%; top:0px;}
+66%  {left:30%; top:0px;}
+82%  {left:0px; top:0px;}
+100% {left:0px; top:-150px;}
+}
+
+.abulm .abulm_5 img{
+  animation-name:myfifth;
+  animation-duration:5s;
+  animation-timing-function:linear;
+  animation-delay:4s;
+  animation-iteration-count:infinite;
+  animation-direction:normal;
+  animation-play-state:running;
+  /* Firefox: */
+  -moz-animation-name:myfifth;
+  -moz-animation-duration:5s;
+  -moz-animation-timing-function:linear;
+  -moz-animation-delay:4s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-direction:normal;
+  -moz-animation-play-state:running;
+  /* Safari and Chrome: */
+  -webkit-animation-name:myfifth;
+  -webkit-animation-duration:5s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-delay:4s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:normal;
+  -webkit-animation-play-state:running;
+  /* Opera: */
+  -o-animation-name:myfifth;
+  -o-animation-duration:5s;
+  -o-animation-timing-function:linear;
+  -o-animation-delay:4s;
+  -o-animation-iteration-count:infinite;
+  -o-animation-direction:normal;
+  -o-animation-play-state:running;
+} 
+
+@keyframes myfifth
+{
+0%   {left:-33.3%; top:-150px;}
+16%  {left:-3.3%; top:-150px;}
+33%  {left:32.7%; top:-150px;}
+49%  {left:32.7%; top:0px;}
+66%  {left:-3.3%; top:0px;}
+82%  {left:-33.3%; top:0px;}
+100% {left:-33.3%; top:-150px;}
+}
+
+@-moz-keyframes myfifth /* Firefox */
+{
+0%   {left:-33.3%; top:-150px;}
+16%  {left:-3.3%; top:-150px;}
+33%  {left:32.7%; top:-150px;}
+49%  {left:32.7%; top:0px;}
+66%  {left:-3.3%; top:0px;}
+82%  {left:-33.3%; top:0px;}
+100% {left:-33.3%; top:-150px;}
+}
+
+@-webkit-keyframes myfifth /* Safari and Chrome */
+{
+0%   {left:-33.3%; top:-150px;}
+16%  {left:-3.3%; top:-150px;}
+33%  {left:32.7%; top:-150px;}
+49%  {left:32.7%; top:0px;}
+66%  {left:-3.3%; top:0px;}
+82%  {left:-33.3%; top:0px;}
+100% {left:-33.3%; top:-150px;}
+}
+
+@-o-keyframes myfifth /* Opera */
+{
+0%   {left:-33.3%; top:-150px;}
+16%  {left:-3.3%; top:-150px;}
+33%  {left:32.7%; top:-150px;}
+49%  {left:32.7%; top:0px;}
+66%  {left:-3.3%; top:0px;}
+82%  {left:-33.3%; top:0px;}
+100% {left:-33.3%; top:-150px;}
+}

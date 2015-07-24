@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<nav class="theme-nav">
+		<ul>
+			<li class="l1 active" data-page="1"><a href="javascript:void(0);" title=""></a></li>
+			<li class="l2" data-page="2"><a href="javascript:void(0);" title=""></a></li>
+			<li class="l3" data-page="3"><a href="javascript:void(0);" title=""></a></li>
+			<li class="l4" data-page="4"><a href="javascript:void(0);" title=""></a></li>
+			<li class="l5" data-page="5"><a href="javascript:void(0);" title=""></a></li>
+			<li class="l6" data-page="6"><a href="javascript:void(0);" title=""></a></li>
+			<li class="l7" data-page="7"><a href="javascript:void(0);" title=""></a></li>
+			<li class="l8" data-page="8"><a href="javascript:void(0);" title=""></a></li>
+		</ul>
+	</nav>
+	<article class="a1 move-on">
+		<nav class="content-nav">
+			<ul>
+				<li class="active" data-page="1"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="2"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="3"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="4"><a href="javascript:void(0);" title=""></a></li>
+			</ul>
+		</nav>
+		<section class="s11 move-on">
+			<div class="inner">
+				<div class="inner-title"><h1>认识CSS</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">定义</div>
+						<div class="inner-sub-content">层叠样式表 (Cascading Style Sheets)</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">作用</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>用于定义HTML内容在浏览器内的显示样式，如文字大小、颜色、字体加粗等</li>
+								<li>解决内容与表现分离的问题</li>
+								<li>极大地提高了工作效率</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s12 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS语法</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">CSS样式规则</div>
+						<div class="inner-sub-content">
+							<p>CSS样式由选择符和声明组成，而声明又由属性和值组成，如</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<p>'p'为选择符</p>
+									<p>大括号之间的内容为声明</p>
+									<p>'color','font-size'为属性</p>
+									<p>'red','12px'为值</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">CSS代码注释</div>
+						<div class="inner-sub-content">
+							<p>用/*注释语句*/来标明，如</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>/*我是注释啦啦啦*/<br/>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s13 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS使用方式</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">内联式css样式</div>
+						<div class="inner-sub-content">
+							<p>把CSS代码直接写在现有的HTML标签中，如</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>&lt;p style="color:red;&nbsp;font-size:12px"&gt;这里文字是红色。&lt;/p&gt;</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">嵌入式css样式</div>
+						<div class="inner-sub-content">
+							<p>把css样式代码写在&lt;style type="text/css"&gt;&lt;/style&gt;"标签之间，如</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>&lt;style type="text/css"&gt;<br/>span&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>}<br/>&lt;/style&gt;</p>
+								</div>
+								<div class="inner-code-explain">
+									<p><br/>一般情况下嵌入式css样式写在&lt;head&gt;&lt;/head&gt;之间</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s14 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS使用方法</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">外部式css样式</div>
+						<div class="inner-sub-content">
+							<p>把css代码写一个单独的外部文件中，这个css样式文件以“.css”为扩展名，在&lt;head&gt;内（不是在&lt;style&gt;标签内）使用&lt;link&gt;标签将css样式文件链接到HTML文件内，如</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>&lt;link href="base.css" rel="stylesheet" type="text/css" /&gt;</p>
+								</div>
+								<div class="inner-code-explain">
+									<p>注意：&lt;link&gt;标签位置一般写在&lt;head&gt;标签之内</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">三种方法的优先级</div>
+						<div class="inner-sub-content">
+							<p>当内联式、嵌入式、外部式样式表中css样式是在的相同权值的情况下且嵌入式css样式的位置在外部式的后面时，有</p>
+							<div class="inner-code">
+								<div class="inner-code-explain">
+									<p>内联式&gt;嵌入式&gt;外部式（就近原则）</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<article class="a2 move-right">
+		<nav class="content-nav">
+			<ul>
+				<li class="active" data-page="1"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="2"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="3"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="4"><a href="javascript:void(0);" title></a></li>
+				<li data-page="5"><a href="javascript:void(0);" title></a></li>
+			</ul>
+		</nav>
+		<section class="s21 move-on">
+			<div class="inner">
+				<div class="inner-title"><h1>常用基本样式-背景</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">背景颜色</div>
+						<div class="inner-sub-content">
+							<div class="inner-code">
+								<p>background-color不能继承（所有背景属性都不能继承），其默认值是transparent</p>
+								<p>可以为所有元素设置背景色，这包括 body 一直到 em 和 a 等行内元素，如</p>
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;gray;</br>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub s21-float-inner-sub">
+						<div class="inner-sub-title">背景图像</div>
+						<div class="inner-sub-content">
+							<p>图片路径是相对于CSS的位置</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;background-image:&nbsp;url(../img/text.png);</br>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub s21-float-inner-sub">
+						<div class="inner-sub-title">背景大小(CSS3)</div>
+						<div class="inner-sub-content">
+							<p>重新设置背景图片大小</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;background-image:&nbsp;url(../img/text.png);</br>&nbsp;&nbsp;&nbsp;&nbsp;background-size:&nbsp;60px&nbsp;50px;<br/>}</p>
+								</div>
+								<div class="inner-code-explain"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s22 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>常用基本样式-背景</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">背景重复</div>
+						<div class="inner-sub-content">
+							<p>在页面上对背景图像进行平铺</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;background-image:&nbsp;url(../img/text.png);</br>&nbsp;&nbsp;&nbsp;&nbsp;background-repeat:&nbsp;no-repeat;<br/>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<ul>
+										<li>属性值repeat导致图像在水平垂直方向上都平铺(默认)</li>
+										<li>repeat-x 和 repeat-y 分别导致图像只在水平或垂直方向上重复</li>
+										<li>no-repeat 则不允许图像在任何方向上平铺</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">背景定位</div>
+						<div class="inner-sub-content">
+							<p>改变图像在背景中的位置</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;background-image:&nbsp;url(../img/text.png);</br>&nbsp;&nbsp;&nbsp;&nbsp;background-repeat:&nbsp;no-repeat;<br/>&nbsp;&nbsp;&nbsp;&nbsp;background-position:&nbsp;10%&nbsp;20%;<br/>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<ul>
+										<li>可以使用一些关键字：top、bottom、left、right和center</li>
+										<li>属性值不能超过两个（水平方向和垂直方向）</li>
+										<li>可以使用长度值，如 100px 或 5cm</li>
+										<li>可以使用百分数值</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s23 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>常用基本样式-字体和文本</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">字体系列</div>
+						<div class="inner-sub-content">
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-family:&nbsp;"Microsoft YaHei",&nbsp;serif;</br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<ul>
+										<li>用户代理会按所列的顺序查找这些字体</li>
+										<li>当字体名中有一个或多个空格，使用引号</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">字体粗细</div>
+						<div class="inner-sub-content">
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-weight:&nbsp;normal;</br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<ul>
+										<li>关键字 100 ~ 900 为字体指定了 9 级加粗度</li>
+										<li>数字 400 等价于 normal，而 700 等价于 bold</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">字体大小</div>
+						<div class="inner-sub-content">
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;14px;</br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<ul>
+										<li>普通文本（比如段落）的默认大小是 16 像素 </li>
+										<li>1em 等于当前的字体尺寸</li>
+										<li>也能使用百分比</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s24 move-down">
+			<div class="inner">
+				<div class="inner-title">常用基本样式-超链接</div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">设置链接的样式</div>
+						<ul>
+							<li>a:link - 普通的、未被访问的链接</li>
+							<li>a:visited - 用户已访问的链接</li>
+							<li>a:hover - 鼠标指针位于链接的上方</li>
+							<li>a:active - 链接被点击的时刻</li>
+						</ul>
+						<div class="inner-sub-content">
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>a:link&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;</br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration:&nbsp;none;<br/>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<p>当为链接的不同状态设置样式时，请按照以下次序规则：</p>
+									<ul>
+										<li>a:hover 必须位于 a:link 和 a:visited 之后</li>
+										<li>a:active 必须位于 a:hover 之后</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s25 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>常用基本样式-列表</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">列表类型</div>
+						<div class="inner-sub-content">
+							<p>在一个无序列表中，列表项的标志是出现在各列表项旁边的圆点。在有序列表中，标志可能是字母、数字或另外某种计数体系中的一个符号</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>ul&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;list-style-type:&nbsp;square;<br/>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<p>list-style-type修改用于列表项的标志类型：circle、decimal</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">列表项图像</div>
+						<div class="inner-sub-content">
+							<p>使用图像作为列表项的标志</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>ul&nbsp;li&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;list-style-image:&nbsp;url(../img/test.png);<br/>}</p>
+								</div>
+								<div class="inner-code-explain"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<article class="a3 move-right">
+		<nav class="content-nav">
+			<ul>
+				<li class="active" data-page="1"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="2"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="3"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="4"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="5"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="6"><a href="javascript:void(0);" title=""></a></li>
+			</ul>
+		</nav>
+		<section class="s31 move-on">
+			<div class="inner">
+				<div class="inner-title"><h1>选择器</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">什么是选择器</div>
+						<div class="inner-sub-content">
+							<p>"选择器"指明了{}中的"样式"的作用对象，也就是“样式”作用于网页中的哪些元素</p>
+							<p>每一条css样式声明（定义）由两部分组成，形式如下：</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>选择器&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;样式;<br/>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">标签选择器</div>
+						<div class="inner-sub-content">
+							<p>标签选择器其实就是html代码中的标签，通配符'*'表示所有元素(通用选择器)</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s32 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>选择器</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">类选择器</div>
+						<div class="inner-sub-content">
+							<p>语法:&nbsp;&nbsp;.类选器名称{css样式代码;}</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>.test&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<p>设置class为'test'的标签，如</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="test"&gt;纳尼？我被盯上了&lt;/p&gt;</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">ID选择器</div>
+						<div class="inner-sub-content">
+							<p>语法:&nbsp;&nbsp;#类选器名称{css样式代码;}</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>#test&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<p>设置id为'test'的标签的样式，如</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="test"&gt;纳尼？我又被盯上了&lt;/p&gt;</p>
+									<p>标签可以有相同的class，但不能有相同的id</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s33 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>选择器</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">子选择器</div>
+						<div class="inner-sub-content">
+							<p>语法:&nbsp;&nbsp;父选择器 &gt; 子选择器{css样式代码;}，指定父元素的第一代子元素</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>.test &gt; p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<p>指定'test'类的标签元素下第一代&lt;p&gt;标签，如</p>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">后代选择器</div>
+						<div class="inner-sub-content">
+							<p>语法:父选择器&nbsp;子选择器{css样式代码;}，指定父元素的后辈元素</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>.test&nbsp;div&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<p>指定'test'类的标签元素下所有&lt;p&gt;标签，如</p>
+									<p>&lt;div class="test"&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;纳尼？我被盯上了&lt;div&gt;卧槽？我都被盯上4次了&lt;/div&gt;&lt;/div&gt;<br/>&lt;/div&gt;</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s34 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>选择器</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">相邻兄弟选择器</div>
+						<div class="inner-sub-content">
+							<p>语法:&nbsp;&nbsp;A选择器 + B选择器{css样式代码;}，指定紧接在A选择器后的B选择器</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>h1 + p&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<p>指定紧接在&lt;h1&gt;后的&lt;p&gt;元素，如</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;我是A&lt;/h1&gt;</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;我是B&lt;/p&gt;</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">伪类选择器</div>
+						<div class="inner-sub-content">
+							<p>语法:&nbsp;&nbsp;选择器:伪类{css样式代码;}</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p:hover&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<p>当在&lt;p&gt;标签上触发hover事件时,指定相应的样式</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s35 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>选择器</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">分组选择器</div>
+						<div class="inner-sub-content">
+							<p>语法:&nbsp;&nbsp;A选择器, B选择器{css样式代码;}</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>.test1，.test2&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<p>相当于A选择器{CSS样式代码;}和B选择器{CSS样式代码;}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">多类选择器</div>
+						<div class="inner-sub-content">
+							<p><p>语法:&nbsp;&nbsp;.A类选择器.B类选择器{css样式代码;}，同时指定A,B选择器</p></p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>.test1.test2&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;red;<br/>&nbsp;&nbsp;&nbsp;&nbsp;font-size&nbsp;:&nbsp;12px;<br>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<p>指定同时具有.test1类和.test2类的元素，如</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="test1 test2"&gt;我有2个类你怕不怕&lt;/div&gt;</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s36 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>选择器</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">特殊性</div>
+						<div class="inner-sub-content">
+							<p>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p {color:red;} /*权值为1*/</p>
+									<p>p span {color:green;} /*权值为1+1=2*/</p>
+									<p>.warning {color:white;} /*权值为10*/</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<p>当同一个元素设置了不同的CSS样式代码,选用权值最高的样式</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">层叠</div>
+						<div class="inner-sub-content">
+							<p>层叠就是在html文件中对于同一个元素可以有多个css样式存在，当有相同权重的样式存在时，会根据这些css样式的前后顺序来决定，处于最后面的css样式会被应用</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>p {color:&nbsp;red;}</p>
+									<p>p {color:&nbsp;black;}</p>
+								</div>
+								<div class="inner-code-explain">
+									<br/>
+									<p>&lt;p&gt;最终字体颜色为black</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">重要性</div>
+						<div class="inner-sub-content">
+							<p>使用!important为某些样式设置具有最高权值，如：p {color: red!important;}</p>
+						</div>
+					</div>
+			</div>
+		</section>
+	</article>
+	<article class="a4 move-right">
+		<nav class="content-nav">
+			<ul>
+				<li class="active" data-page="1"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="2"><a href="javascript:void(0);" title=""></a></li>
+			</ul>
+		</nav>
+		<section class="s41 move-on">
+			<div class="inner">
+				<div class="inner-title"><h1>盒模型-框模型</h1></div>
+				<div class="inner-content">
+					<div class="inner-content-left s41-float">
+						<div class="inner-sub s41-float">
+							<div class="inner-sub-title">框模型</div>
+							<div class="inner-sub-content s41-img"></div>
+						</div>
+						</div>
+						<div class="inner-content-right s41-float">
+							<div class="inner-sub s41-float">
+								<div class="inner-sub-title">内边距</div>
+								<div class="inner-sub-content">
+									<ul>
+										<li>padding 属性定义元素边框与元素内容之间的空白区域</li>
+										<li>接受长度值或百分比值，但不允许使用负值</li>
+									</ul>
+								</div>
+							</div>
+							<div class="inner-sub s41-float">
+								<div class="inner-sub-title">边框</div>
+								<div class="inner-sub-content">
+									<ul>
+										<li>围绕元素内容和内边距的一条或多条线</li>
+										<li>border 属性允许你规定元素边框的样式、宽度和颜色</li>
+									</ul>
+								</div>
+							</div>
+							<div class="inner-sub s41-float">
+								<div class="inner-sub-title">外边距</div>
+								<div class="inner-sub-content">
+									<ul>
+										<li>围绕在元素边框的空白区域是外边距,设置外边距会在元素外创建额外的“空白”</li>
+										<li>接受长度值或百分比值，可以设置auto和负值</li>
+									</ul>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s42 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>盒模型-box-sizing(CSS3)</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">content-box（标准W3C盒子模型）</div>
+						<div class="inner-sub-content">
+							<p>宽度和高度分别应用到元素的内容框，在宽度和高度之外绘制元素的内边距和边框</p>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">border-box（IE盒子模型）</div>
+						<div class="inner-sub-content">
+							<p>为元素设定的宽度和高度决定了元素的边框盒。就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制，通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>div {<br/>&nbsp;&nbsp;&nbsp;&nbsp;box-sizing: border-box;<br/>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-box-sizing: border-box;<br/>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<article class="a5 move-right">
+		<nav class="content-nav">
+			<ul>
+				<li class="active" data-page="1"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="2"><a href="javascript:void(0);" title=""></a></li>
+			</ul>
+		</nav>
+		<section class="s51 move-on">
+			<div class="inner">
+				<div class="inner-title"><h1>标签元素-简单介绍</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">元素分类</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>块状元素</li>
+								<li>内联元素（又叫行内元素）</li>
+								<li>内联块状元素</li>
+							</ul>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">常用的块状元素</div>
+						<div class="inner-sub-content">
+							<p>&lt;div&gt;、&lt;p&gt;、&lt;h1&gt;...&lt;h6&gt;、&lt;ol&gt;、&lt;ul&gt;、&lt;dl&gt;、&lt;table&gt;、&lt;address&gt;、&lt;blockquote&gt; 、&lt;form&gt;</p>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">常用的内联元素</div>
+						<div class="inner-sub-content">
+							<p>&lt;a&gt;、&lt;span&gt;、&lt;br&gt;、&lt;i&gt;、&lt;em&gt;、&lt;strong&gt;、&lt;label&gt;、&lt;q&gt;、&lt;var&gt;、&lt;cite&gt;、&lt;code&gt;</p>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">常用的内联块状元素</div>
+						<div class="inner-sub-content">
+							<p>&lt;img&gt;、&lt;input&gt;、&lt;a&gt;、&lt;span&gt;</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s52 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>标签元素-简单介绍</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">块状元素特点</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>每个块级元素都从新的一行开始，并且其后的元素也另起一行</li>
+								<li>元素的高度、宽度、行高以及顶和底边距都可设置</li>
+								<li>元素宽度在不设置的情况下，是它本身父容器的100%（和父元素的宽度一致），除非设定一个宽度</li>
+							</ul>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">内联元素特点</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>和其他元素都在一行上</li>
+								<li>元素的高度、宽度及顶部和底部边距不可设置</li>
+								<li>元素的宽度就是它包含的文字或图片的宽度，不可改变</li>
+							</ul>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">内联块状元素特点</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>和其他元素都在一行上</li>
+								<li>元素的高度、宽度、行高以及顶和底边距都可设置</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<article class="a6 move-right">
+		<nav class="content-nav">
+			<ul>
+				<li class="active" data-page="1"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="2"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="3"><a href="javascript:void(0);" title=""></a></li>
+			</ul>
+		</nav>
+		<section class="s61 move-on">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS布局模型-流动模型(Flow)</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">流动模型(Flow)</div>
+						<div class="inner-sub-content">
+							流动（Flow）是默认的网页布局模式
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">特点</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布，因为在默认状态下，块状元素的宽度都为100%</li>
+								<li>内联元素都会在所处的包含元素内从左到右水平分布显示</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s62 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS布局模型-浮动模型(Float)</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">浮动模型(Float)</div>
+						<div class="inner-sub-content">
+							通过float属性设置
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">特点</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止</li>
+								<li>由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样</li>
+							</ul>
+							<p>如</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>div {<br/>&nbsp;&nbsp;&nbsp;&nbsp;width: 100px;<br/>&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;<br/>&nbsp;&nbsp;&nbsp;&nbsp;background: white;<br/>&nbsp;&nbsp;&nbsp;&nbsp;border: 4px solid black;<br>&nbsp;&nbsp;&nbsp;&nbsp;float: left;<br/>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<div class="s62-float-show"></div>
+									<div class="s62-float-show"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s63 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS布局模型-层模型(Layer)</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">层模型(Layer)</div>
+						<div class="inner-sub-content">
+							<p>每个框能够精确定位操作，通过修改position属性改变层布局</p>
+							<ul>
+								<li>static（默认）-元素框正常生成。块级元素生成一个矩形框，作为文档流的一部分，行内元素则会创建一个或多个行框，置于其父元素中</li>
+								<li>relative-元素框偏移某个距离。元素仍保持其未定位前的形状，它原本所占的空间仍保留</li>
+								<li>absolute-元素框从文档流完全删除，并相对于其包含块定位。包含块是最近的position值不为static的祖先元素</li>
+								<li>fixed-元素框的表现类似于将 position 设置为 absolute，不过其包含块是视窗本身</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<article class="a7 move-right">
+		<nav class="content-nav">
+			<ul>
+				<li class="active" data-page="1"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="2"><a href="javascript:void(0);" title=""></a></li>
+				<li data-page="3"><a href="javascript:void(0);" title=""></a></li>
+			</ul>
+		</nav>
+		<section class="s71 move-on">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS3-转换</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">2D转换</div>
+						<div class="inner-sub-content">
+							<p>通过 CSS3 转换(transform属性,Chrome 和 Safari 需要前缀 -webkit-)，我们能够对元素进行移动、缩放、转动、拉长或拉伸</p>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">移动-translate()</div>
+						<div class="inner-sub-content">
+							<p>元素从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标） 位置参数</p>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">转动-rotate()</div>
+						<div class="inner-sub-content">
+							<p>通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转</p>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">缩放-scale()</div>
+						<div class="inner-sub-content">
+							<p>通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s72 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS3-过渡</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">介绍</div>
+						<div class="inner-sub-content">
+							<p>通过 CSS3（transition 属性， Safari 需要前缀 -webkit-），我们可以在不使用 Flash 动画或 JavaScript 的情况下，当元素从一种样式变换为另一种样式时为元素添加效果</p>
+							</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">使用</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>规定您希望把效果添加到哪个 CSS 属性上</li>
+								<li>规定效果的时长，默认为0</li>
+								<li>规定过渡效果的时间曲线，默认是 "ease"</li>
+								<li>规定过渡效果何时开始，默认为0</li>
+							</ul>
+							<p>如</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>div {<br/>&nbsp;&nbsp;&nbsp;&nbsp;transition-property: width;<br/>&nbsp;&nbsp;&nbsp;&nbsp;transition-duration: 1s;<br/>&nbsp;&nbsp;&nbsp;&nbsp;transition-timing-function: ease;<br/>&nbsp;&nbsp;&nbsp;&nbsp;transition-delay: 2s;<br/>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<p>等价于</p>
+									<p>div {<br/>&nbsp;&nbsp;&nbsp;&nbsp;transition: width 1s ease 2s;<br/>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s73 move-down">
+			<div class="inner">
+				<div class="inner-title"><h1>CSS3-动画</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">介绍</div>
+						<div class="inner-sub-content">
+							<p>通过 CSS3，我们能够创建动画，这可以在许多网页中取代动画图片、Flash 动画以及 JavaScript</p>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">使用</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>学习 @keyframes 规则-@keyframes 规则用于创建动画。在 @keyframes 中规定某项 CSS 样式，就能创建由当前样式逐渐改为新样式的动画效果</li>
+								<li>把规则捆绑到某个选择器，否则不会产生动画效果</li>
+							</ul>
+							<p>如</p>
+							<div class="inner-code">
+								<div class="inner-code-show">
+									<p>编写动画规则</p>
+									<p>@keyframes myfirst {<br/>&nbsp;&nbsp;&nbsp;&nbsp;0% {background: red;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;25%  {background: yellow;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;50%  {background: blue;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;100% {background: green;}<br/>}</p>
+								</div>
+								<div class="inner-code-explain">
+									<p>捆绑选择器</p>
+									<p>div {<br/>&nbsp;&nbsp;&nbsp;&nbsp;animation: myfirst 5s;<br/>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<article class="a8 move-right">
+		<section class="s81 move-on">
+			<div class="inner">
+				<div class="inner-title"><h1>随便谈谈</h1></div>
+				<div class="inner-content">
+					<div class="inner-sub">
+						<div class="inner-sub-title">如何学习CSS</div>
+						<div class="inner-sub-content">
+							<ul>
+								<li>多实践</li>
+								<li>多模仿</li>
+								<li>多看书</li>
+								<li>多看博客</li>
+								<li>学会用前端开发框架</li>
+							</ul>
+						</div>
+					</div>
+					<div class="inner-sub">
+						<div class="inner-sub-title">推荐小软件</div>
+						<div class="inner-sub-content">
+							<p>配色神器Color cube</p>
+							<ul>
+								<li>屏幕吸管</li>
+								<li>色彩分析，色板导出</li>
+								<li>批量网页截图</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

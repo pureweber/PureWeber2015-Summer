@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		@keyframes typing { 
+			from { width: 0; } 
+			50% {width: 60ch;}
+			to:{width: 0;}
+		}
+		@keyframes blink-caret { 50% { border-color: transparent; } }
+		h1 { 
+			font: bold 200% Consolas, Monaco, monospace;
+			border-right: .1em solid;
+			width: 0;
+			margin: 2em 1em;
+			white-space: nowrap;
+			overflow: hidden;
+			animation: typing 5s steps(60, end); /* # of steps = # of chars */
+			           blink-caret .5s step-end infinite;	
+			}
+	</style>
+</head>
+<body>
+	<h1> Demo Inspired from http://dabblet.com/gist/1745856</h1>
+</body>
+</html>

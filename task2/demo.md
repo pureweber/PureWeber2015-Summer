@@ -14,3 +14,19 @@ Task2 Demo 展示
 * [task2](https://cdn.rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/964873559/index.html)
 
 **建议地址：[https://github.com/pureweber/PureWeber2015-Summer/pull/29](https://github.com/pureweber/PureWeber2015-Summer/pull/29)**
+
+## MrTuo
+
+* [signup](https://cdn.rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/MrTuo/signup.html)
+
+* [index](https://cdn.rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/MrTuo/index.html)
+
+**建议地址:[https://github.com/pureweber/PureWeber2015-Summer/pull/36](https://github.com/pureweber/PureWeber2015-Summer/pull/36)**
+
+## tzjtatata
+
+* [signup](https://cdn.rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/tzjtatata/signup.html)
+* [Nav](https://cdn.rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/tzjtatata/navigation.html)
+* [CSS3动画](https://cdn.rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/tzjtatata/pic.html)
+
+**建议地址:[https://github.com/pureweber/PureWeber2015-Summer/pull/37](https://github.com/pureweber/PureWeber2015-Summer/pull/37)**

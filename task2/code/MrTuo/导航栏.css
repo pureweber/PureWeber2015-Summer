@@ -1,0 +1,155 @@
+/*主页*/
+*{
+	margin: 0px;
+	padding: 0px;
+	color: #272822;	
+}
+
+.nav{
+	display: block;
+	width:100% ;
+	background-color: #F7F7F7;
+}
+ul li{
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 20px;
+	font-family: "Microsoft YaHei";
+	
+}
+.log{
+	position: relative;
+	top:0px;
+	margin-left: 0px;
+}
+a{
+	text-decoration: none;
+}
+li:hover{
+	text-decoration: underline; 
+	background-color: #56595D;
+}
+body{
+	background-image: url("img/背景5.jpg");
+}
+.signup{
+	position: absolute;
+	right: 80px;
+	top: 65px;
+}
+/*注册页面*/
+.section{
+	margin-top: 50px;
+	display: block;
+	clear:both;
+	height: 500px;
+}
+.form{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	height: 600px;
+	width:370px;
+	margin-top: 40px;
+}
+.input{
+	float: right;
+	margin: 10px
+}
+.submit{
+	display:block;
+	clear:right;
+	margin-right: auto;
+	margin-left: auto; 
+	width: 30px;
+}
+input{
+	color: black;
+	font-size: 20px;
+}
+/*动画部分*/
+.cutton{
+	width: 930px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.flip-container,.flip-container2,.flip-container3,.flip-container4{
+	perspective: 1000;
+	-webkit-perspective:1000;
+}
+	/*设置翻转后*/
+	.flip-container:hover .flipper, .flip-container.hover .flipper,
+	.flip-container2:hover .flipper2, .flip-container2.hover .flipper2,
+	.flip-container3:hover .flipper3, .flip-container3.hover .flipper3,
+	.flip-container4:hover .flipper4, .flip-container4.hover .flipper4{
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back,.flip-container2, .front2,.back2,.flip-container3, .front3, .back3,.flip-container4, 
+.front4, .back4{
+	display: inline-block;
+	margin-top: 100px;
+	width: 225px;
+	height: 180px;
+}
+
+/* 设置翻转速度 */
+
+.flipper,.flipper2,.flipper3,.flipper4{
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	position: relative;
+}
+
+/* 在反转时隐藏背面，并设置元素位置（必须为绝对位置才能保证正反面覆盖）*/
+
+.front, .back,.front2, .back2,.front3, .back3,.front4, .back4{
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+/* 利用z-index将前页放在上面*/
+.front {
+	z-index: 2;
+	background-image: url("img/1.jpg");
+}
+
+.front2 {
+	z-index: 2;
+	background-image: url("img/2.jpg");
+}
+
+.front3 {
+	z-index: 2;
+	background-image: url("img/3.jpg");
+}
+.front4 {
+	z-index: 2;
+	background-image: url("img/4.jpg");
+}
+
+
+
+/* 设置背面显示*/
+.back {
+	background-image: url("img/bg1.jpg");
+	transform: rotateY(180deg);
+}
+.back2 {
+	background-image: url("img/bg2.jpg");
+	transform: rotateY(180deg);
+}
+
+.back3 {
+	background-image: url("img/bg3.jpg");
+	transform: rotateY(180deg);
+}
+
+.back4 {
+	background-image: url("img/bg4.jpg");
+	transform: rotateY(180deg);
+}

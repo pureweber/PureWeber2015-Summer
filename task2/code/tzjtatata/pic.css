@@ -1,0 +1,74 @@
+img
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation-name:mypic;
+animation-duration:5s;
+animation-timing-function:linear;
+animation-delay:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Firefox: */
+-moz-animation-name:myfirst;
+-moz-animation-duration:5s;
+-moz-animation-timing-function:linear;
+-moz-animation-delay:2s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:alternate;
+-moz-animation-play-state:running;
+/* Safari and Chrome: */
+-webkit-animation-name:myfirst;
+-webkit-animation-duration:5s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-delay:2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+/* Opera: */
+-o-animation-name:myfirst;
+-o-animation-duration:5s;
+-o-animation-timing-function:linear;
+-o-animation-delay:2s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:alternate;
+-o-animation-play-state:running;
+}
+
+@keyframes myfirst
+{
+0%   {left:0px; top:0px; border-radius: 0%;}
+25%  {left:200px; top:0px;border-radius: 13%;}
+50%  {left:200px; top:200px;border-radius: 25%;}
+75%  {left:0px; top:200px;border-radius: 38%;}
+100% {left:0px; top:0px;border-radius: 50%;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {left:0px; top:0px; border-radius: 0%;}
+25%  {left:200px; top:0px;border-radius: 13%;}
+50%  {left:200px; top:200px;border-radius: 25%;}
+75%  {left:0px; top:200px;border-radius: 38%;}
+100% {left:0px; top:0px;border-radius: 50%;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {left:0px; top:0px; border-radius: 0%;}
+25%  {left:200px; top:0px;border-radius: 13%;}
+50%  {left:200px; top:200px;border-radius: 25%;}
+75%  {left:0px; top:200px;border-radius: 38%;}
+100% {left:0px; top:0px;border-radius: 50%;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {left:0px; top:0px; border-radius: 0%;}
+25%  {left:200px; top:0px;border-radius: 13%;}
+50%  {left:200px; top:200px;border-radius: 25%;}
+75%  {left:0px; top:200px;border-radius: 38%;}
+100% {left:0px; top:0px;border-radius: 50%;}
+}

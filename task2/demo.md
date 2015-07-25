@@ -30,3 +30,13 @@ Task2 Demo 展示
 * [CSS3动画](https://cdn.rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/tzjtatata/pic.html)
 
 **建议地址:[https://github.com/pureweber/PureWeber2015-Summer/pull/37](https://github.com/pureweber/PureWeber2015-Summer/pull/37)**
+
+## LCAR979
+
+* [signup](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/LCAR979/signup.html)
+* [main](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/LCAR979/main.html)
+* [ani](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/LCAR979/ani.html)
+
+## fateice 
+
+* [main](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/fateice/signup.html)

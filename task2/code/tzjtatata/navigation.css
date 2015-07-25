@@ -1,0 +1,29 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+.navigation {
+  background-color: #2f3032;
+  overflow: hidden;
+}
+.navigation li {
+  line-height: 25px;
+  display:inline-block;
+  vertical-align: middle;
+  font-family: "微软雅黑";
+}
+.navigation ul{
+  margin-top: 12px;
+}
+.navigation a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-shadow: 1px 0 0 #101011;
+  padding: 0 10px;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 #5a5b5c inset,0 1px 0 #080808;
+}
+.navigation a:hover {
+  text-decoration: none;
+  box-shadow: 0 1px 0 #f9bd71 inset,0 1px 0 #0a0a0a;
+}	

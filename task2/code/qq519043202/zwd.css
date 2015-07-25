@@ -1,0 +1,60 @@
+.ul1{
+	list-style-type:none;
+}
+.ul1 li {
+	display: inline;
+}
+
+.ul1 a:link,a:visited
+{
+font-weight:bold;
+color:#FFFFFF;/*字体*/
+background-color:#bebebe;/*a的颜色*/
+width:120px;
+text-align:center;/*字体居中*/
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}
+
+.ul1 a:hover,a:active
+{
+background-color:#cc0000;
+}
+/*参考w3school*/
+
+.xx
+{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 1200px;
+
+}
+#myh
+{
+	width: 800px;
+	position:relative;
+	left: 5%;
+	border-bottom: 2px solid gray;
+ 	font-family: Georgia,serif;
+ 	font-size: 50px;
+ 	color: white;
+
+ }
+
+ #mydiv
+ {
+ 		margin-top: 35px;
+ 		text-align: center;
+ 		font-family:"微软雅黑";
+ 		font-size: 29px;
+ 		line-height: 30px;
+ }
+ .bgp{
+ 	margin-top: -20px;
+ 	height: 800px;
+ 	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+ 	background-image: url(a.jpg);
+ }

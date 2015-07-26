@@ -1,0 +1,135 @@
+<html>
+
+<head>
+
+<style type="text/css">
+/*导航栏参考了W3C，圆角处理参考了百度*/
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+border-bottom: 2px ridge gray;
+}
+
+li
+{
+float:left;
+}
+
+a:link,a:visited
+{
+font-size:18px;
+display:block;
+width:120px;
+font-weight:900;
+color:#FFFFFF;
+background-color:#bebebe;
+text-align:center;
+padding:16px;
+text-decoration:none;
+}
+
+a:hover,a:active	
+{
+background-color:#CC0000;
+}
+
+h1{
+background-color:#FF0000;
+font-size:20px;
+}
+
+#divstyle
+{ background-image:url(u=2443278227,666223952&fm=21&gp=0.jpg);
+background-repeat:no-repeat;
+background-size:100% 100%;
+ text-align:center;
+}
+
+h2
+{
+font-size:30px;
+font-weight:500;
+float:inherit;
+padding:8px;
+}
+
+#text
+{
+border-style:inset;
+height:35px; 
+width:350px; 
+margin-top:-40px;
+font-size:16px;
+}
+
+#radio
+{
+height:15px;
+width:15px;
+}
+
+#button
+{
+width:1000px; 
+height:30px;
+background-color:#333333;
+border-style:none;
+font-size:20px;
+font-weight:900;
+color:#FF0000;
+font-family:
+
+}
+
+#mid{ margin:0px 20px; background:#333333; font-size:20px;}
+div.rtop{ display:block; background:#AF1E1E;}
+div.rtop div { display:block; height:1px; overflow:hidden; background-color:#333333}
+div.r1{ margin:0 3px;}
+div.r2{ margin:0 2px;}
+div.r3{ margin:0 1px;}
+div.rtop div.r4 { margin:0 1px; height:1px;}
+
+</style>
+
+</head>
+<body  style="margin:0; padding:0;">
+
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">HELP</a></li>
+<li><a href="#">SIGN IN</a></li>
+<h1>&nbsp;</h1>
+</ul>
+<div  id="divstyle">
+<br />
+<form>
+<h2>Name:<input style="margin-left:177px" id="text" type="text" name="name"/> </h2>
+<h2>PassWord:<input  style="margin-left:120px"id="text" type="password" name="password"/></h2>
+<h2>PassWord again:<input style="margin-left:30px" id="text" type="password-again" name="password"/></h2>
+<h2>e-mail:<input  style="margin-left:170px"id="text" type="text" name="e-mail"/></h2>
+<h2>sex:
+<input style="margin-left:227px" id="radio" type="radio" name="sex" /> male♂</font>
+<input id="radio" type="radio" name="sex" /> female♀</font>
+</h2>
+<div id="mid">
+ <div class="rtop">
+   <div class="r1"></div>
+   <div class="r2"></div>
+   <div class="r3"></div>
+   <div class="r4"></div>
+ </div><input id="button" type="submit" value="S U B M I T"/>
+ <div class="rtop">
+   <div class="r4"></div>
+   <div class="r3"></div>
+   <div class="r2"></div>
+   <div class="r1"></div>
+  </div>
+</div>
+</form>
+</div>
+</body>
+</html>

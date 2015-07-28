@@ -1,0 +1,134 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+nav
+{
+  background-color:rgb(90,90,90);
+}
+ul li 
+{
+  display: block;
+  height: 53px;
+  width: 200px;
+  float: right;
+  margin-left:0px;
+  -webkit-transition: width 1s;
+}
+.lalala
+{
+  -webkit-transition: width 1s,  -webkit-transform 1s;
+  -webkit-animation: first 2s;
+}
+ul li:hover
+{
+
+  width: 300px;
+}
+ul::after 
+{
+  content: '';
+  display: block;
+  clear: both;
+}
+.long
+{
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+
+  -webkit-animation: myfirst 5s;
+  animation-iteration-count:100;
+  position: relative;
+  left: 0px;
+  top:0px;
+  height: 50px;
+  width: 50px;}
+.lala
+{  float: left;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  -webkit-animation: mfirst 5s;
+  animation-iteration-count:100;
+  font-family: 微软雅黑;
+  font-size: 40px;
+  position: relative;
+}
+.long:hover
+{
+  height: 100px;
+  width: 100px;
+
+}
+.offset1
+{
+  float: left;
+}
+li>a{
+  font-weight:bold;
+  font-size:25px;
+  position: relative;
+  left: 50px;
+  top:10px;
+  color: #EFEBE9;
+  text-decoration:none;
+  text-shadow: 2px 2px 2px #1B1411;
+}
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0%   {left:0px; top:0px;}
+50%  {left:100px; top:0px;}
+100% {left:0px; top:0px;}
+}
+@-webkit-keyframes mfirst /* Safari 和 Chrome */
+{
+0%   {left:0px; top:0px;}
+50%  {left:100px; top:0px;}
+100% {left:0px; top:0px;}
+}
+@-webkit-keyframes first /* Safari 和 Chrome */
+{
+0%   {width: 300px}
+100% {width: 200px}
+}
+body{
+  background-color: #6E6E6E;
+}
+
+.jumbotron {
+  background-image:url('lalala.JPG');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+.col-md-4
+{
+  float: left;
+  width: 400px;
+}

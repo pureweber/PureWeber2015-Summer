@@ -48,10 +48,8 @@
   color: #00b0ff;
 }
 
-#SignUp{
-  width: 1350px;
-  height:768px;
-  background-image: url("1396320157843.jpg");
+body{
+  background-color: #66CCFF;
 }
 #Try{
   text-align: center;

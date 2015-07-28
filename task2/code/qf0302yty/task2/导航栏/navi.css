@@ -1,0 +1,25 @@
+@charset "utf-8";
+*{
+	margin:0px;
+	padding: 0px;
+}
+a:link,a:visited,a:active{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+a:hover{
+	text-decoration: underline;
+}
+li{
+	display:inline-block;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+}
+ul{
+	margin-top: 12px;
+}
+.lists{
+	background-color: #2E333F;
+	height:70px;
+	overflow: hidden;
+}

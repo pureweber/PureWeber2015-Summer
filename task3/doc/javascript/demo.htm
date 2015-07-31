@@ -1,0 +1,518 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.2.4
+    site: https://github.com/ksky521/nodePPT
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Lecture - By fangwentong</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    <link rel="stylesheet" media="print" href="./css/pdf.css">
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>JavaScript 简介</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>历史</h1>
+<ul class="moveIn">
+<li>JavaScript 起源: Netscape与Sun公司合作开发, 被使用在Netscape Navigator中</li>
+<li>半路杀出IE, VBScript</li>
+<li>Netscap联合ECMA (&quot;ek-ma&quot;) 对JavaScript进行了标准化, 形成ECMAScript规范</li>
+<li>浏览器大战,  标准不统一</li>
+<li>标准化 ECMAScript (ECMA), W3C DOM, HTML5 BOM.</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>用途</h1>
+<ul class="moveIn">
+<li>JavaScript 被设计用来向 HTML 页面添加交互行为。</li>
+<li>JavaScript 是一种脚本语言(脚本语言是一种轻量级的 编程语言)。</li>
+<li>JavaScript 通常被直接嵌入 HTML 页面。</li>
+<li>JavaScript 是一种解释型语言(就是说,代码执行不进行预编译)。</li>
+<li>所有的人无需购买许可证均可使用 JavaScript。</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>JavaScript 实现</p>
+<p>一个完整的JavaScript应该由下列三个不同的组成部分:</p>
+<ul class="moveIn">
+<li>核心 (ECMAScript)</li>
+<li>文档对象模型 (DOM)</li>
+<li>浏览器对象模型 (BOM)</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>网页引入JavaScript</h1>
+<ol>
+<li><p>通过HTML的<code>script</code>标签引入</p>
+<pre><code>&lt;html&gt;
+ &lt;body&gt;
+ &lt;script type=&quot;text/javascript&quot;&gt;
+     document.write(&quot;Hello World!&quot;);
+ &lt;/script&gt;
+ &lt;/body&gt;
+ &lt;/html&gt;
+</code></pre></li>
+<li><p>引入外部JavaScript</p>
+<pre><code>&lt;html&gt;
+ &lt;head&gt;
+ &lt;script src=&quot;des.js&quot;&gt;&lt;/script&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;/body&gt;
+ &lt;/html&gt;
+</code></pre></li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>体验JavaScript</h1>
+<ul class="moveIn">
+<li><code>F12</code> 打开Chrome开发者工具.</li>
+<li>安装 <a href="https://nodejs.org/" target="_blank">Node.js</a></li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>ECMAScript</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<ul class="moveIn">
+<li><p>ECMA-262标准: 规定了: 语法, 类型, 语句, 关键字, 保留字, 操作符, 对象.</p>
+</li>
+<li><p>ECMAScript就是实现该标准规范的各个方面内容的语言的描述。</p>
+</li>
+<li><p>JavaScript实现了ECMAScript， Adobe ActionScript同样也实现了ECMAScript.</p>
+</li>
+<li><p>目前ECMAScript已经发布了若干版本，最新版是ECMAScript第6版, 简称ES6。
+不同浏览器对这些标准的支持程度不同， 其中，主流浏览器对ECMAScript第3版支持都还不错，对最新标准的支持程度会越来越好.</p>
+</li>
+<li><p><strong>浏览器只是ECMAScript的可能宿主之一!</strong></p>
+</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>语句</h1>
+<ol class="moveIn">
+<li><p>将各条语句放在不同行上就可以分隔它们</p>
+<pre><code>first statement
+ second statement
+</code></pre></li>
+<li><p>多条语句放在同一行， 必须用分号分隔</p>
+<pre><code>first statement;  second statement;
+</code></pre></li>
+<li><p>建议每条语句的末尾都加上一个分号</p>
+<pre><code>first statement;
+ second statement;
+</code></pre></li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>注释</h1>
+<pre><code class="javascript">// C++ 风格注释
+
+/**
+ * 多行注释
+ */
+</code></pre>
+<pre><code class="html">&lt;!-- HTML风格注释
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>变量</h1>
+<ul class="moveIn">
+<li><p>使用<code>var</code>语句来声明变量</p>
+<pre><code class="javascript">var name = &#39;foo&#39;;
+  console.log(&#39;Hello, &#39; + name);
+</code></pre>
+</li>
+<li><p>不使用<code>var</code>也行, 但会创建出全局变量, 推荐总是使用<code>var</code>来创建变量</p>
+<pre><code class="javascript">function foo() {
+      bar = &#39;Hello, world.&#39;;
+  }
+  foo();
+  console.log(bar);
+</code></pre>
+</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>命名规范</h1>
+<ul class="moveIn">
+<li><p>标识符第一个字符必须是一个字母, 下划线(_) 或者美元符号($);</p>
+</li>
+<li><p>其他字符可以使字母, 下划线, 美元符或者数字</p>
+</li>
+<li><p>按照惯例， ECMAScript标识符要采用驼峰命名法, 对象构造函数一般使用大驼峰,
+  普通标识符使用小驼峰</p>
+<pre><code>function Person (name, age) {
+      this.name = name;
+      this.age = age;
+      this.sayName = function () {
+          alert(this.name);
+      };
+  }
+
+  var person1 = new Person(&#39;foo&#39;, 20);
+</code></pre></li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>数据类型</h1>
+<ol>
+<li><p>基本数据类型</p>
+<ul class="moveIn">
+<li>String</li>
+<li>Number</li>
+<li>Boolean</li>
+<li>null</li>
+<li>undefined</li>
+</ul>
+</li>
+<li><p>引用数据类型</p>
+<ul class="moveIn">
+<li>Object</li>
+<li>Function</li>
+<li>Date</li>
+<li>RegExp</li>
+<li>Math</li>
+<li>...</li>
+</ul>
+</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<p>JavaScript 对象</p>
+<ul>
+<li>JavaScript是一种基于对象的编程语言。</li>
+<li>JavaScript中有对象,对象包括属性和方法。</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>创建JavaScript 对象</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Object构造函数</h1>
+<pre><code>var person = new Object();
+
+person.name = &#39;Foo&#39;;
+person.age = 25;
+person.sayName = function() {
+    console.log(this.name);
+};
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>对象字面量</h1>
+<pre><code>var person = {
+    name: &#39;Foo&#39;,
+    age: 25,
+    sayName: function() {
+        console.log(this.name);
+    }
+}
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>工厂模式</h1>
+<pre><code>function createPerson(name, age) {
+    var o = new Object();
+
+    o.name = name;
+    o.age = age;
+    o.sayName = function() {
+        console.log(this.name);
+    };
+
+    return o;
+}
+
+var person1 = createPerson(&#39;Foo&#39;, 25);
+var person2 = createPerson(&#39;Bar&#39;, 21);
+person1.sayName();
+person2.sayName();
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>构造函数模式</h1>
+<pre><code>function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.sayName =  function() {
+    console.log(this.name);
+    };
+}
+var person1 = new Person(&#39;Foo&#39;, 25);
+var person2 = new Person(&#39;Bar&#39;, 21);
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>JavaScript 数组:</h1>
+<ul class="moveIn">
+<li>数组内部数据类型可以不同，大小可以动态调整</li>
+<li>使用方括号表示法或者构造函数创建</li>
+<li>length 属性</li>
+<li>栈方方法: <code>push</code>, <code>pop</code></li>
+<li>队列方法: <code>push</code>/<code>shift</code>, <code>pop</code>/<code>unshift</code></li>
+<li>排序方法: <code>sort</code>, <code>reverse</code></li>
+<li>迭代方法: every, filter, forEach, map, reduce, some</li>
+<li>...</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>JavaScript 函数:</h1>
+<ul class="moveIn">
+<li>函数是对象, 函数名是指针，因此JavaScript中的函数没有重载, 一个函数名指向一个函数对象， 后者覆盖前者</li>
+<li>函数声明和函数表达式<pre><code>// 函数声明, 存在函数申明提升
+  function sum(num1, num2) {
+      return num1 + num2;
+  }
+  // 函数定义
+  var sum = function (num1, num2) {
+      return num1 + num2;
+  };
+</code></pre></li>
+<li>函数属性: length, prototype, this(内部), arguments(内部)</li>
+<li>函数方法: apply, call</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>JavaScript 语句:</h1>
+<ul class="moveIn">
+<li>if...else if...else 语句</li>
+<li>do...while语句</li>
+<li>for语句</li>
+<li>for-in语句: 无顺序枚举对象的属性</li>
+<li>break和continue</li>
+<li>switch 语句</li>
+<li>with语句: 改变作用域链, 调试困难, 不建议使用</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>JavaScript 运算符</h1>
+<p><img src="./image/1.png" alt=""></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>JavaScript 运算符</h1>
+<p><img src="./image/2.png" alt=""></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>JavaScript 运算符</h1>
+<p><img src="./image/3.png" alt=""></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>DOM (Document Object Model)</h1>
+<p>一个与系统和编程语言无关的接口， 程序和脚本可以通过这个接口动态地访问和修改文档的内容、
+结构和样式.</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>如何理解DOM ?</h1>
+<p><img src="./image/dom1.png" alt=""></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>一份HTML文档可以理解一棵树</h1>
+<p><img src="./image/dom0.png" alt=""></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>节点</h1>
+<ul class="moveIn">
+<li>元素节点: element node,  与标签对应， 标签名就是元素名</li>
+<li>文本节点: text node</li>
+<li>属性节点: attribute node</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>获取元素</h1>
+<ul class="moveIn">
+<li><strong>getElementById</strong></li>
+<li><strong>getElementsByTagName</strong></li>
+<li><strong>getElementsByClassName</strong> (HTML5 DOM)</li>
+<li>3者都是全局对象document的方法</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>获取和设置属性</h1>
+<ul>
+<li><strong>getAttribute</strong></li>
+<li><strong>setAttribute</strong></li>
+</ul>
+<pre><code class="javascript">// 针对`element node`进行操作
+var paras = document.getElementsByTagName(&#39;p&#39;);
+for (var i=0; i &lt; paras.length; i++) {
+  alert(params[i].getAttribute(&quot;title&quot;));
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>HTTP</h2>
+<ul class="moveIn">
+<li>HTTP 1.0 RFC 1945</li>
+<li>HTTP 1.1 RFC 2616</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>URL/URI</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>报文格式</h1>
+<ul class="moveIn">
+<li>请求报文</li>
+<li>响应报文</li>
+</ul>
+<p>打开浏览器演示一下</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>首部信息举例</h2>
+<ul class="moveIn">
+<li>Connection</li>
+<li>Content-Type</li>
+<li>Content-Length</li>
+<li>Cache-Control</li>
+<li>Last-Modified/If-Modified-Since</li>
+<li>ETag/If-None-Match</li>
+<li>Accept</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Cookie</h1>
+<ul class="moveIn">
+<li><p>HTTP协议无状态, 因为维护状态信息代价很大.</p>
+</li>
+<li><p>可以使用Cookie记录用户相关信息</p>
+</li>
+<li><p>Set-Cookie/Cookie</p>
+</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Cache</h1>
+<ul class="moveIn">
+<li>Cache-Control</li>
+<li>Last-Modified/If-Modified-Since</li>
+<li>ETag/If-None-Match</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Node Talk</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>服务器离我们并不遥远</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>ECMAScript 另类实现 --- Node.js</h1>
+
+</article></section></slide>
+        <!--slide class="slide thank-you-slide segue nobackground">
+            <article class="flexbox vleft auto-fadein">
+                <h2>Q &amp; A</h2>
+                <h3>&lt;Thank You!&gt;</h3>
+            </article>
+        </slide-->
+        <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+              <h2 style="color: white;">Powered By nodePPT v1.2.4</h2>
+            </article>
+          </slide>
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = location.pathname.split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'slide3',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/hljs-0.8.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+
+<link rel="stylesheet" href="./css/theme.colors.css">
+<!--placeholder-->
+</body>
+</html>

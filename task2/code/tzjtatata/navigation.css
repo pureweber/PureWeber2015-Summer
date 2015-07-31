@@ -7,6 +7,8 @@
   overflow: hidden;
 }
 .navigation li {
+  margin-right: 10px;
+  margin-left: 10px;
   line-height: 25px;
   display:inline-block;
   vertical-align: middle;

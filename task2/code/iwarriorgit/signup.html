@@ -1,0 +1,65 @@
+<html>
+
+<head>
+	<title>Sign up</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<style type="text/css">
+		.na{width:100%; height:50px; line-height:36px; background-color:rgba(100,0,255,0.7); margin:10px auto;}
+		.na>ul{width:100%;height:50px;margin:0 auto;}
+		.na li{ float:left;font-family:'微软雅黑';list-style-type:none;}
+		.na a{width:120px;height:40px;line-height:36px;background:#88F;color:#FFF;margin:5px 20px;font-size:20px;display:block;text-align:center;text-decoration:none;}
+		.na a:hover{width:120px;height:40px;line-height:36px;border:1px solid blue;color:blue;background:#FFF;	}
+		.Singup{margin-left:auto;margin-right:auto;width:200px;font-size:50px;}
+	</style>
+</head>
+<body background = "background.jpg" width=100% style="font-family:'微软雅黑';color:blue;">
+
+<div class="na">
+	<ul>
+		<li><a href="main.html">首页</a></li>
+		<li><a href="main.html">啦啦啦</a></li>
+		<li><a href="main.html">PureWeber</a></li>
+	</ul>
+</div>
+<div class="Singup">Sign up</div>
+
+<br/>
+<center>
+<table border="0">
+
+	<form name="input" action="html_form_action.asp" method="get">
+
+		<tr>
+		<td align="right">Name:</td><td><input type="text" name="firstname"/></td>
+		</tr>
+		<tr>
+		<td align="right">E-mail:</td><td><input type="text" name="email"/></td>
+		</tr>
+
+		<tr>
+		<td align="right">gender</td>
+		<td>
+			<input type="radio" name="sex" value="male" /> Male
+			<input type="radio" name="sex" value="female" /> Female
+		</td>
+		</tr>
+
+		<tr><td align="right">Check</td>
+		<td>
+			<input type="checkbox" name="bike" />
+			I like git
+			<br/><input type="checkbox" name="car" />
+			Git is difficult...
+		</td>
+
+		<tr>
+		<td align="right">Username:</td>
+		<td><input type="text" name="username" /></td>
+		</tr>
+	</form>
+</table>
+<input type="submit" value="Submit"  onclick=window.location.href="main.html" />
+</center>
+
+</body>
+</html>

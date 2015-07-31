@@ -1,0 +1,248 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*.logo {*/
+    /*margin-top: 20px;*/
+    /*width: 293px;*/
+    /*height: 69px;*/
+    /*margin-left: 30%;*/
+/*}*/
+
+.body1 {
+    height: 56px;
+}
+
+.navigation {
+    background-color: #2E333F;
+    overflow: hidden;
+}
+
+li {
+    font-size: 24px;
+    display: inline-block;
+    height: 35px;
+}
+
+.container {
+    position: relative;
+    /*height: 500px;*/
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+}
+
+.join_us {
+    font-size: 60px;
+    color: coral;
+}
+
+.sign_up {
+    width: 25%;
+}
+
+/*.td1 {*/
+    /*width: 25%;*/
+/*}*/
+
+/*.td2 {*/
+    /*width: 75%;*/
+/*}*/
+
+/*section {*/
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+/*}*/
+/*.show .sign_up {*/
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+/*}*/
+
+tr {
+    font-size: 24px;
+}
+
+.show {
+    width: 75%;
+    background-color: darkgoldenrod;
+}
+/*.container1 {*/
+    /*height: 20%;*/
+    /*width: 100%;*/
+    /*background-color: blueviolet;*/
+/*}*/
+
+#MainContentContainer {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+}
+
+#LeftDialog {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+    height: 100%;
+}
+
+#RightDialog {
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    width: 75%;
+    height: 100%;
+}
+
+#HtmlDialog {
+    perspective: 1000;
+    -webkit-perspective:1000;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 45px;
+    left: 232px;
+    width: 180px;
+    height: 50px;
+}
+
+#CssDialog {
+    perspective: 1000;
+    -webkit-perspective:1000;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top:45px;
+    right: 232px;
+    width: 180px;
+    height: 50px;
+}
+
+#JSDialog {
+    perspective: 1000;
+    -webkit-perspective:1000;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 232px;
+    bottom: 105px;
+    width: 180px;
+    height: 50px;
+}
+
+#MoreDialog {
+    perspective: 1000;
+    -webkit-perspective:1000;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    right: 232px;
+    bottom: 105px;
+    width: 180px;
+    height: 50px;
+}
+
+#HtmlDialog:hover, #CssDialog:hover, #JSDialog:hover, #MoreDialog:hover {
+    transform: rotateY(180deg);
+}
+
+#front1 {
+    z-index: 2;
+    background-color: sandybrown;
+}
+
+#back1 {
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+
+#front2 {
+    z-index: 2;
+    background-color: sandybrown;
+}
+
+#back2 {
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+
+#front3 {
+    z-index: 2;
+    background-color: sandybrown;
+}
+
+#back3 {
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+
+#front4 {
+    z-index: 2;
+    background-color: sandybrown;
+}
+
+#back4 {
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+
+#front1, #front2, #front3, #front4, #back1, #back2, #back3, #back4 {
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+#td1 {
+    font-size: 30px;
+    color: aqua;
+}
+
+tr {
+    font-size: 30px;
+}
+
+.myButton {
+    width: 100px;
+    height: 30px;
+}

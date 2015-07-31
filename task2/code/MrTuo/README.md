@@ -1,1 +1,1 @@
-[展示页地址](https://rawgit.com/MrTuo/PureWeber2015-Summer/task2/code/MrTuo/导航栏.html)
+**展示页地址**[https://cdn.rawgit.com/purewer/PureWeber2015-Summer/task2/code/MrTuo/index.html](https://cdn.rawgit.com/purewer/PureWeber2015-Summer/task2/code/MrTuo/index.html)

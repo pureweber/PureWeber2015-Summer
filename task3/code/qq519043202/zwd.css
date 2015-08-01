@@ -58,14 +58,14 @@ background-color:#cc0000;
 
  #bgp1{
  	margin-top: -20px;
- 	height: 800px;
+ 	height: 100%;
  	background-repeat: no-repeat;
  	background-size: 100% 100%;
  	background-image: url(a.jpg);
  }
  #bgp2{
  	margin-top: -20px;
- 	height: 800px;
+ 	height: 100%;
  	background-repeat: no-repeat;
  	background-size: 100% 100%;
  	background-image: url(a.jpg);

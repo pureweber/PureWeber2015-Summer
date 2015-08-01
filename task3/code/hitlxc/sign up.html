@@ -1,0 +1,289 @@
+<html>
+<head>
+<style type="text/css">
+/*导航栏参考了W3C，圆角处理参考了百度*/
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+border-bottom: 2px ridge gray;
+}
+
+li
+{
+float:left;
+}
+
+a:link,a:visited
+{
+font-size:18px;
+display:block;
+width:120px;
+font-weight:900;
+color:#FFFFFF;
+background-color:#bebebe;
+text-align:center;
+padding:16px;
+text-decoration:none;
+}
+
+a:hover,a:active	
+{
+background-color:#CC0000;
+}
+
+h1{
+background-color:#FF0000;
+font-size:20px;
+}
+
+#divstyle
+{ background-image:url(u=2443278227,666223952&fm=21&gp=0.jpg);
+background-repeat:no-repeat;
+background-size:100% 100%;
+ text-align:center;
+}
+
+h2
+{
+font-size:30px;
+font-weight:500;
+font-family:Arial, Helvetica, sans-serif;
+float:inherit;
+padding:8px;
+}
+
+#text
+{
+border-style:inset;
+height:35px; 
+width:550px; 
+margin-top:-40px;
+font-size:16px;
+}
+
+#radio
+{
+height:15px;
+width:15px;
+}
+
+#button1
+{
+width:1000px; 
+height:30px;
+background-color:#333333;
+border-style:none;
+font-size:20px;
+font-weight:lighter;
+color:#FF0000;
+}
+
+#button2
+{
+width:500px; 
+height:30px;
+background-color:#333333;
+border-style:none;
+font-size:20px;
+font-weight:lighter;
+color:#FF0000;
+}
+
+#mid{ margin:0px 20px; background:#333333; font-size:20px;}
+div.rtop{ display:block; background:#AF1E1E;}
+div.rtop div { display:block; height:1px; overflow:hidden; background-color:#333333}
+div.r1{ margin:0 3px;}
+div.r2{ margin:0 2px;}
+div.r3{ margin:0 1px;}
+div.rtop div.r4 { margin:0 1px; height:1px;}
+
+</style>
+
+</head>
+<body  style="margin:0; padding:0;">
+
+<ul>                                                                          <!--导航栏-->
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">HELP</a></li>
+<li style="display:block" onClick="signIn()" id="#1"><a href="#">SIGN IN</a></li>
+<li style="display:none" onClick="signUp()" id="#2"><a href="#">SIGN UP</a></li>
+<h1>&nbsp;</h1>
+</ul>
+
+<div  id="divstyle">
+<br />
+
+<form style="margin-top:50px; margin-bottom:45px" name="form1">           <!--注册表单-->
+<h2>Name:<input style="margin-left:177px; margin-top:20px" id="text" type="text" value="" placeholder="less than 12 letters" name="name" /> </h2>
+<h2>PassWord:<input  style="margin-left:120px"id="text" type="password" value="" placeholder="more than 6 latters and consists of numbers and letters" name="password"/></h2>
+<h2>PassWord again:<input style="margin-left:37px" id="text" type="password" value="" placeholder="repeat U password" name="password"/></h2>
+<h2>e-mail:<input  style="margin-left:172px"id="text" type="text" value="" placeholder="please input U email" name="e-mail"/></h2>
+<h2>sex:
+<input style="margin-left:227px; margin-bottom:30px" id="radio" type="radio" name="sex" /> male♂</font>
+<input id="radio" type="radio" name="sex" /> female♀</font></h2>
+</form>
+
+<form name="form2" style="display:none">                             <!--登录表单-->
+<h2>Name:<input style=" margin-top:147px ;margin-left:177px" id="text" type="text" value="" placeholder="input U registered name" /> </h2>
+<h2>PassWord:<input style=" margin-top:36px; margin-bottom:147px;margin-left:120px"id="text" type="password" value="" placeholder="input U registered password" /></h2>
+</form>
+
+<div id="mid">                                <!--带有圆角处理的提交按钮-->
+ <div class="rtop">
+   <div class="r1"></div>
+   <div class="r2"></div>
+   <div class="r3"></div>
+   <div class="r4"></div>
+ </div><input style="display:inline" id="button1" name="button1" type="button" onClick="submit()" value="S U B M I T"/>
+ <input style="display:none" id="button2" name="button2" type="button" onClick="login()" value="L O G I N"/>
+ <input style="display:none" id="button2" name="button3" type="button" onClick="retrievePassword()" value="Forgot My Password"/>
+ <div class="rtop">
+   <div class="r4"></div>
+   <div class="r3"></div>
+   <div class="r2"></div>
+   <div class="r1"></div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+function submit()//验证表单信息
+{
+	var nameReview = document.getElementsByName("name")[0].value;
+	var flag = 0;
+	if (nameReview.length>=12 ||  nameReview == "")	//名字不能为空不能太长
+	{		
+		alert("R U kidding me? is it U real name?......" );
+		document.getElementsByName("name")[0].value = "";
+		flag = 1;
+	}
+	for (var i =0 ; i < nameReview.length ;i++)//名字要由英文字母组成（这里有个bug就是它无法验证符号，还没想到怎么处理）
+	{
+		if(nameReview[i]<65 || (nameReview[i]>90 && nameReview[i]<97) || nameReview[i]>122 )
+		{
+			alert("R U kidding me? is it U real name?......" );
+			document.getElementsByName("name")[0].value = "";
+			flag = 1;
+			break;
+		}
+	}
+	
+	var passwordReview = document.getElementsByName("password")[0].value;//验证密码
+	if (passwordReview.length<=6)
+	{
+		alert("U password is too short");
+		document.getElementsByName("password")[0].value = "";
+		flag = 1;
+	}
+	if (passwordReview.length>=18)
+	{
+		alert("U password is too long");
+		document.getElementsByName("password")[0].value = "";
+		flag = 1;
+	}
+	var score = check(passwordReview);//验证密码强度，0,1为弱，禁止提交，2,3为强，允许提交但有提示，4为最强
+	if (score == 0 || score ==1 )
+	{
+		alert("Your password is not safe!");
+		document.getElementsByName("password")[0].value = "";
+		flag = 1;
+	}
+	if (score == 2 || score ==3 )
+	{
+		flag = 2;
+		
+	}
+	if (score == 4 )
+	{
+		flag = 3;
+	}
+	
+	var passwordAgainReview = document.getElementsByName("password")[1].value;//验证两次输入的密码是否相同
+	if (passwordReview != passwordAgainReview)
+	{
+		alert("Two passwords are not the same!");
+		document.getElementsByName("password")[0].value = "";
+		document.getElementsByName("password")[1].value = "";
+		flag = 1;
+	}
+	
+	var emailReview = document.getElementsByName("e-mail")[0].value;//验证邮箱格式是否正确
+	if (!emailReview.match(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/))
+	{
+		alert("Please input the right email");
+		document.getElementsByName("e-mail")[0].value = "";
+		flag = 1;
+	}
+	//验证Email地址："^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"。
+	if (flag==2)
+	{
+		alert("Submit success! \nbut your password strength is general\nWe will review your information and send the result to your email in 1 hour ");
+	signIn();
+	}
+	if (flag==3)
+	{
+		alert("Submit success! \nand your password strength is strong\nWe will review your information and send the result to your email in 1 hour ");
+	signIn();
+	}
+	
+}
+
+function check(password)
+{
+	var Score = 0;  
+    if (password.match(/[a-z]/)!=null)
+    {  
+        Score += 1;  
+    } 
+	if (password.match(/[A-Z]/)!=null) 
+    {  
+        Score += 1;  
+    }
+    if (password.match(/[0-9]/)!=null) 
+    {  
+        Score += 1; 
+    }
+    if (password.match(/[!,@#$%^&*?_~]/)!=null) // 验证特殊字符  
+    {  
+        Score += 1;
+    } 
+    return Score;   
+}  
+
+function signIn()//登录注册页面切换
+{
+	document.getElementsByName("form1")[0].style.display = "none";
+	document.getElementsByName("form2")[0].style.display = "block";
+	document.getElementById("#1").style.display = "none";
+	document.getElementById("#2").style.display = "block";
+	document.getElementsByName("button1")[0].style.display = "none";
+	document.getElementsByName("button2")[0].style.display = "inline";
+	document.getElementsByName("button3")[0].style.display = "inline";
+}
+
+function signUp()//登录注册页面切换
+{
+	document.getElementsByName("form1")[0].style.display = "block";
+	document.getElementsByName("form2")[0].style.display = "none";
+	document.getElementById("#1").style.display = "block";
+	document.getElementById("#2").style.display = "none";
+	document.getElementsByName("button1")[0].style.display = "inline";
+	document.getElementsByName("button2")[0].style.display = "none";
+	document.getElementsByName("button3")[0].style.display = "none";
+}
+
+function login()
+{
+	alert("该功能尚未开发，敬请期待......〒_〒");
+}
+
+function retrievePassword()
+{
+	alert("亲爱的，你的密码找不回来了");//卖个萌
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+
+
+    <div class="header">
+        <div class="logo"></div>
+        <div class="js-sign-flow">
+            <div class="view view-signin" id="viewlog" style="display: none;">
+                <div class="title">
+                    <a href="#signup" id="alog">注册</a>
+                    <span>登录账号</span>
+                </div>
+                <div class="email input-wrapper">
+                    <input type="text" placeholder="手机号或邮箱" id="accoutlog" />
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="密码（不少于6位）" id="passwordlog"/>
+                </div>
+                <div class="button-wrapper command">
+                    <botton class="sign-button submit" type="submit" id="buttonlog">
+                        登陆PureWeber
+                    </botton>
+                </div>
+            </div>
+            <div class="view view-signup" id="viewsign" style="display: block;">
+                <form id="signup">
+                    <div class="title">
+                        <a href="#signin" id="asign">登录</a>
+                        <span>注册账号</span>
+                    </div>
+                    <div class="name input-wrapper">
+                        <input type="text" placeholder="姓名" id="fullname">
+                    </div>
+                    <div class="email input-wrapper">
+                        <input type="text" placeholder="手机号或邮箱" id="accout" />
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" placeholder="密码（不少于6位）" id="password"/>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" placeholder="确认密码" id="confirmpwd"/>
+                    </div>
+                    <!--<div class="captcha-holder">-->
+                        <!--<div class="input-wrapper">-->
+                            <!--<input id="captcha" placeholder="验证码" name="captcha"/>-->
+                            <!--<p class="input-wrapper captcha">-->
+                                <!--<span>看不清？</span>-->
+                                <!--<a href="#">换一张</a>-->
+                                <!--<img width="120" height="30"/>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="button-wrapper command">
+                        <botton class="sign-button submit" type="submit" id="button">
+                            注册PureWeber
+                        </botton>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="myJS.js"></script>
+    <div class="body-wrapper"></div>
+    <div class="footer"></div>
+</body>
+</html>

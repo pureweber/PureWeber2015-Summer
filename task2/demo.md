@@ -40,3 +40,34 @@ Task2 Demo 展示
 ## fateice 
 
 * [main](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/fateice/signup.html)
+
+## qq519043202 
+
+* [main](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/qq519043202/main.html)
+* [signup](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/qq519043202/signup.html)
+* [mycss3](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/qq519043202/mycss3.html)
+
+## iwarriorgit
+
+* [main](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/iwarriorgit/main.html)
+* [signup](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/iwarriorgit/signup.html)
+
+## voidhug
+
+* [index](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/voidhug/index.html)
+
+## hitlxc
+
+* [signup](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/hitlxc/sign%20up.html)
+* [css3](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/hitlxc/css3.html)
+
+## ChenMai
+
+* [signup](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/ChenMai/SignUp.html)
+* [main](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/ChenMai/main.html)
+
+## blackgreymon
+
+* [login](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/blackgreymon/login.html)
+* [main](http://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/blackgreymon/main.html)
+* [signup](https://rawgit.com/pureweber/PureWeber2015-Summer/master/task2/code/blackgreymon/signup.html)

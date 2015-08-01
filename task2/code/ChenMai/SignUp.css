@@ -1,0 +1,36 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+	font-size: 35px;
+}
+a:link,a:visited,a:active{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+a:hover{
+	text-decoration: underline;
+}
+.nav{
+	height: 72px;
+	background-color: #9981FF;
+}
+li{
+	display:inline-block;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+}
+ul{
+	margin-top: 12px;
+}
+img{
+	height: 72px;
+	width: 72px;
+}
+body{
+	background-image: url(2.jpg);
+	background-size: cover;
+}
+form{
+	margin-top: 200px;
+}

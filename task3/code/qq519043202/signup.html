@@ -1,0 +1,89 @@
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="zwd.css">
+
+</head>
+  <body>
+
+<div class = "xx" align= "right">
+
+  <ul class ="ul1">
+          <li><a href="main.html" >home page</a></li>
+          <li><a href="#">Name</a></li>
+          <li><a href="#">Browse</a></li>
+          <li><a href="#" name="aa" style="display:none" onclick="inf()">Sign Up</a></li>
+          <li><a href="#" name="aa" style="display:inline" onclick="up()">Log In</a></li>
+          <li><a href="#">Help</a></li>
+  </ul>
+
+</div>
+
+
+<div id="bgp1"  style="display: block">
+
+
+<h1 id ="myh">注册信息</h1>
+
+
+<div id = "mydiv">
+<form>
+注册邮箱：
+<input type="text" name="mail1" placeholder="请输入正确的邮箱"/>
+<br /><br />
+手机号码：
+<input type="text" name="tel1" placeholder="请输入正确手机号码"/>
+<br /><br />
+设置密码：
+<input type="password" name="password1" placeholder="密码不少于6位"/>
+<br /><br />
+确认密码：
+<input type="password" name="password1" placeholder="再输入一次的个说"/>
+<br /><br />
+性别：
+<select name="sex">
+<option value="male">male</option>
+<option value="female">female</option>
+<option value="??" >??</option>
+</select>
+<br /><br />
+<input type="button" onclick="check()" value="提交">
+<input type="reset" value="重置">
+
+</form>
+
+</div>
+</div>
+<div id="bgp2" style="display:none">
+
+
+<h1 id ="myh">登陆</h1>
+
+
+<div id = "mydiv">
+<form>
+邮箱：
+<input type="text" name="mail2" placeholder="填写已注册的邮箱"/>
+<br /><br />
+密码：
+<input type="password" name="password2" placeholder="填写密码"/>
+<br /><br />
+<!--
+验证码：
+<input type="text" name="tel" placeholder="填写验证码"/>
+<br /><br />-->
+<input type="button" onclick="signin()" value="登陆">
+
+
+</form>
+
+</div>
+</div>
+    <script src = "myjs.js"></script>
+  </body>
+</html>

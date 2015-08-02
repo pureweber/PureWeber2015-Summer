@@ -1,2 +1,6 @@
+# Created by using vim
+*.swp
+*~
 .DS_Store
 .idea
+*~

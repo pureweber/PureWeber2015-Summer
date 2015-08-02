@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+	<link rel="stylesheet" type="text/css" href="sigup.css">
+	<script src="signup.js"></script>
+
+	<title>登陆&注册</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="inner">
+			<div class="logo"></div>
+			<div id="sign-in" style="display:block">
+				<div class="form-title">
+					<a href="javascript:displaySignUp()">注册 →</a>
+					<span class="title-lable">注册账号</span>
+				</div>
+				<div class="form">
+					<form action = "/weee"id = "sign-up-form" onsubmit="checkSignUp();return false">
+						<div class="name input"><input required type="text" placeholder="姓名" id="sign-up-name"></div>
+						<div class="email input"><input required type="text" placeholder="手机账号或邮箱" id="sign-up-email"></div>
+						<div class="pwd input"><input required type="password" placeholder="密码（不少于6位)" id="sign-up-pwd"></div>
+						<div class="button"><button class="sign-button" type="submit">注册</button></div>
+						<div class="fail input">
+							</form>
+								<ul id="sign-up-ul">
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div id="sign-up" style="display:none">
+				<div class="form-title">
+					<a href="javascript:displaySignIn()">登录 →</a>
+					<span class="title-label">登录知乎</span>
+				</div>
+				<div class="form">
+					<form>
+						<div class="email input"><input required type="text" placeholder="手机账号或邮箱"></div>
+						<div class="pwd input"><input required type="text" placeholder="密码"></div>
+						<div class="button"><button class="sign-button" type="submit" >登录</button></div>
+					</form>	
+				</div>
+			</div>
+	</div>
+</body>
+</html>

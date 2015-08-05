@@ -1,0 +1,52 @@
+body {
+    background: dodgerblue;
+    color: ghostwhite;
+    font-size: larger;
+    font-family: cursive;
+}
+
+button {
+    font-size: larger;
+    font-family: cursive;
+}
+
+input {
+    font-size: larger;
+    font-family: cursive;
+}
+
+li {
+    list-style-type: none;
+}
+
+.signForm {
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+.formTable, .underButton{
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.buttonType {
+    color: ghostwhite;
+    background-color: transparent;
+    border: 1px;
+    text-decoration: underline;
+}
+
+.formTable {
+    text-align: left;
+}
+
+input[type = "text"], input[type = "password"] {
+    border: 1px;
+}
+
+#signUpDiv {
+    display: none;
+}
+#signInDiv {
+    display: inline;
+}

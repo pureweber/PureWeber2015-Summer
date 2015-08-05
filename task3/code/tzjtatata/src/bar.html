@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>OTZ...</title>
+    <link href = "foo.css" rel="stylesheet" type="text/css">
+    <script type = "text/javascript" src = foobar.js></script>
+</head>
+
+<body>
+<div id="signUpDiv" class = "signForm">
+    <form name="signUpForm" method="post" action="bar.html" onsubmit="return !!signUpSubmit()" onreset="clearSignUpCheck();">
+        <button type="button" onclick="switchToSignIn()" class = "buttonType">Sign in</button>
+        <table class = "formTable">
+            <tr>
+                <td>
+                    Username:
+                </td>
+                <td>
+                    <input id="signUpUsername" type="text" name="username" onblur="!!signUpCheck()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input id="signUpPassword" type="password" name="password" onblur="!!signUpCheck()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Recheck Password:
+                </td>
+                <td>
+                    <input id="signUpRePassword" type="password" onblur="!!signUpCheck()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone:
+                </td>
+                <td>
+                    <input id="signUpPhone" type="text" name="phone" onblur="!!signUpCheck()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-mail:
+                </td>
+                <td>
+                    <input id="signUpEmail" type="text" name="email" onblur="!!signUpCheck()">
+                </td>
+            </tr>
+            <tr align="center" class="underButton">
+                <td>
+                    <input type="submit" value="Submit" class = "buttonType">
+                </td>
+                <td>
+                    <input type="reset" value="Reset" class = "buttonType">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <ul>
+        <li>
+            <div id="signUpUsernameCheckDiv"></div>
+        </li>
+        <li>
+            <div id="signUpPasswordCheckDiv"></div>
+        </li>
+        <li>
+            <div id="signUpRepasswordCheckDiv"></div>
+        </li>
+        <li>
+            <div id="signUpPhoneCheckDiv"></div>
+        </li>
+        <li>
+            <div id="signUpEmailCheckDiv"></div>
+        </li>
+    </ul>
+</div>
+<div id = "signInDiv" class = "signForm">
+    <form name="signInForm" method="get" action="bar.html" onsubmit="return !!signInSubmit();" onreset="clearSignInCheck();">
+        <button type="button" onclick="switchToSignUp()" class = "buttonType">Sign up</button>
+        <table class = "formTable">
+            <tr>
+                <td>
+                    Username:
+                </td>
+                <td>
+                    <input id="signInUsername" type="text" name="username" onblur="signInCheck()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input id="signInPassword" type="password" name="password" onblur="signInCheck()">
+                </td>
+            </tr>
+            <tr align="center" class="underButton">
+                <td>
+                    <input type="submit" value="Submit" class = "buttonType">
+                </td>
+                <td>
+                    <input type="reset" value="Reset" class = "buttonType">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <ul>
+        <li>
+            <div id="signInUsernameCheckDiv"></div>
+        </li>
+        <li>
+            <div id="signInPasswordCheckDiv"></div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

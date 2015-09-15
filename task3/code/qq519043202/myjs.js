@@ -24,7 +24,7 @@ function inf()
 	anode[0].style.display="none";
 	anode[1].style.display="inline";
 	div1.style.display="block";
-	div2.style.display="inline";
+	div2.style.display="none";
 }
 
 function check()
